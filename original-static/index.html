@@ -2,6 +2,9 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 <title>흰 점의 비행</title><meta name="description" content="가만히 있어도 잔잔하게 흐르고, 마우스 곁에서 날아오르는 흰 점들.">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23ce479c'/%3E%3Cpath fill='white' d='M6 16h5v5H6zm8-7h5v5h-5zm10 7h5v5h-5z'/%3E%3C/svg%3E">
 <style>
@@ -10,12 +13,12 @@
 </head>
 <body>
 <canvas id="sky" aria-label="분홍색 격자 위 흰 점으로 이루어진 그림. 점들은 자동으로 잔잔하게 움직이며, 마우스나 손가락을 움직이면 가까운 점들이 더 크게 날아오릅니다."></canvas>
-<header><h1>흰 점의 비행</h1><p>가만히 있어도 잔잔하게 흐르고,<br>가까이 다가가면 더 크게 날아올라.</p></header>
-<span class="hint">마우스를 움직이거나 화면을 터치해 봐</span>
+<header><h1>흰 점의 비행</h1><p>We design for the,<br>Outliers of Tomorrow</p></header>
+<!-- <span class="hint">마우스를 움직이거나 화면을 터치해 봐</span>
 <div class="controls" aria-label="움직임 조절">
 <div class="field"><label for="radius">이동 범위 <output id="radiusValue">140</output></label><input id="radius" type="range" min="60" max="280" step="10" value="140" aria-label="이동 범위"></div>
 <div class="field"><label for="distance">비행 거리 <output id="distanceValue">90</output></label><input id="distance" type="range" min="20" max="180" step="10" value="90" aria-label="비행 거리"></div>
-<button id="pause" aria-pressed="false">움직임 멈춤</button><button id="reset">원래 자리로</button>
+<button id="pause" aria-pressed="false">움직임 멈춤</button><button id="reset">원래 자리로</button> -->
 </div><p class="status" id="status" role="status">흰 점들을 불러오는 중…</p>
 <script src="flight.js"></script>
 </body></html>

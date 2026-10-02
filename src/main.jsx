@@ -5,6 +5,9 @@ import './demo.css';
 
 createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <WhiteFlight style={{ height: '100dvh' }} />
+    <WhiteFlight 
+    showControls={false}
+    
+      style={{ height: '100dvh' }} />
   </React.StrictMode>
 );
