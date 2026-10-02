@@ -3,24 +3,15 @@ import styles from './WhatWeMake.module.css';
 
 const steps = [
   {
-    number: '01.',
-    title: '10-min Toolkit',
-    description: '완벽주의에 갇힌 생각을 깨뜨리고, 질문·상상·실행의 프레임워크를 통해 하루 10분 만에 머릿속 가설을 눈앞의 실체로 전환하는 입문 툴킷입니다.',
-    image: '/toolkit.jpg',
+    image: '/project_1.png',
     imageAlt: '10-min Toolkit 제품 이미지',
   },
   {
-    number: '02.',
-    title: 'My Future Playbook',
-    description: '파편화된 생각을 넘어 나만의 고유한 미래 관점과 구체적인 로드맵을 깊이 있게 설계하는 정교한 실행서입니다.',
-    image: '/playbook.jpg',
+    image: '/project_2.png',
     imageAlt: 'My Future Playbook 제품 이미지',
   },
   {
-    number: '03.',
-    title: 'Lab Products',
-    description: '정답 없는 세상에서 나만의 궤적을 만드는 창작자를 위해, OTHER WAYS 스튜디오가 새로이 선보이는 연구 라인업입니다.',
-    image: '/lab-products.jpg',
+    image: '/project_3.png',
     imageAlt: 'Lab Products 제품 이미지',
   },
 ];
