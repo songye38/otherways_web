@@ -26,3 +26,36 @@
   height: auto;
   margin-bottom: 12px;
 }
+
+.heroNav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  margin-top: 28px;
+
+  /* caption에 pointer-events: none이 있어도 메뉴는 클릭 가능 */
+  pointer-events: auto;
+}
+
+.heroNav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+
+  color: #fff;
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.heroNav a:hover {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+.heroNav a:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 4px;
+}

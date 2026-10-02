@@ -1,6 +1,6 @@
 .section {
   box-sizing: border-box;
-  min-height: 100svh;
+  min-height: 120svh;
   padding: clamp(56px, 8vh, 96px) clamp(24px, 6vw, 96px);
   display: grid;
   grid-template-rows: auto 1fr;
@@ -8,14 +8,17 @@
   background: #fff;
   color: #111;
   font-family: 'Outfit', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
-  background-color: #fff;
-background-image: url('/whatwedo_bg.png');
-background-repeat: no-repeat;
-background-position: center;
-background-size  : contain;
 }
 
 .section * { box-sizing: border-box; }
+
+.productImage {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  margin-top: 24px;
+}
 
 
 

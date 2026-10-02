@@ -6,8 +6,8 @@ import styles from './WhiteFlight.module.css';
 
 /** Copy this entire folder into your React project. No animation library needed. */
 export default function WhiteFlight({
-  radius = 140,
-  distance = 140,
+  radius = 40,
+  distance = 240,
   ambientStrength = 1,
   speed = 1,
   background = '#ce479c',
@@ -62,14 +62,7 @@ export default function WhiteFlight({
         role="img"
         aria-label="흰 점들이 잔잔하게 움직이는 그림. 마우스나 손가락을 움직이면 가까운 점들이 더 크게 날아오릅니다."
       />
-      {showCaption && <header className={styles.caption}>
-        <img
-          src="/logo.png"
-          alt="브랜드 이름"
-          className={styles.logo}
-        />
-        <p>We design for the <br />Outliers of Tomorrow</p>
-      </header>}
+
       {showControls && <div className={styles.controls} aria-label="움직임 조절">
         <div className={styles.field}>
           <label htmlFor={`${id}-radius`}>이동 범위 <output>{localRadius}</output></label>
