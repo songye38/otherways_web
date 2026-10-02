@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>흰 점의 비행</title><meta name="description" content="가만히 있어도 잔잔하게 흐르고, 마우스 곁에서 날아오르는 흰 점들.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23ce479c'/%3E%3Cpath fill='white' d='M6 16h5v5H6zm8-7h5v5h-5zm10 7h5v5h-5z'/%3E%3C/svg%3E">
+<style>
+:root{font-family:Arial,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;color:#fff;background:#ce479c;color-scheme:dark}*{box-sizing:border-box}body{margin:0;overflow:hidden}canvas{display:block;width:100vw;height:100dvh;touch-action:none}header{position:fixed;top:28px;left:32px;pointer-events:none}h1{font-size:18px;letter-spacing:-.03em;margin:0 0 8px;font-weight:500}header p{font-size:14px;margin:0;opacity:.8;line-height:1.6}.controls{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:26px;padding:16px 22px;border:1px solid #ffffff38;background:#9b2567b8;backdrop-filter:blur(18px);border-radius:12px;max-width:calc(100vw - 32px)}.field{display:flex;flex-direction:column;gap:9px;width:126px}label{font-size:14px;display:flex;justify-content:space-between;white-space:nowrap}output{opacity:.7;font-variant-numeric:tabular-nums;font-size:13px}input{width:100%;accent-color:#fff;cursor:pointer;height:4px}button{font:inherit;font-size:14px;white-space:nowrap;color:#fff;background:none;border:1px solid #ffffff5a;border-radius:6px;padding:10px 13px;cursor:pointer}button:hover{background:#ffffff1a}button:focus-visible,input:focus-visible{outline:2px solid white;outline-offset:5px}.hint{position:fixed;right:30px;top:30px;font-size:12px;opacity:.6;pointer-events:none}.status{position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);font-size:16px;text-align:center}.status:empty{display:none}@media(max-width:600px){header{top:20px;left:20px}header p{max-width:240px}.hint{display:none}.controls{bottom:16px;padding:14px;gap:14px;flex-wrap:wrap;justify-content:center;width:calc(100vw - 32px)}.field{width:calc(50% - 10px)}button{padding:9px 14px}}
+</style>
+</head>
+<body>
+<canvas id="sky" aria-label="분홍색 격자 위 흰 점으로 이루어진 그림. 점들은 자동으로 잔잔하게 움직이며, 마우스나 손가락을 움직이면 가까운 점들이 더 크게 날아오릅니다."></canvas>
+<header><h1>흰 점의 비행</h1><p>가만히 있어도 잔잔하게 흐르고,<br>가까이 다가가면 더 크게 날아올라.</p></header>
+<span class="hint">마우스를 움직이거나 화면을 터치해 봐</span>
+<div class="controls" aria-label="움직임 조절">
+<div class="field"><label for="radius">이동 범위 <output id="radiusValue">140</output></label><input id="radius" type="range" min="60" max="280" step="10" value="140" aria-label="이동 범위"></div>
+<div class="field"><label for="distance">비행 거리 <output id="distanceValue">90</output></label><input id="distance" type="range" min="20" max="180" step="10" value="90" aria-label="비행 거리"></div>
+<button id="pause" aria-pressed="false">움직임 멈춤</button><button id="reset">원래 자리로</button>
+</div><p class="status" id="status" role="status">흰 점들을 불러오는 중…</p>
+<script src="flight.js"></script>
+</body></html>
