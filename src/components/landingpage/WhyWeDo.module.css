@@ -1,0 +1,59 @@
+.section {
+  box-sizing: border-box;
+  min-height: 100svh;
+  padding: 36px 24px;
+
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 64px;
+
+  background: white;
+  color: black;
+  text-align: center;
+  font-family:
+    'Pretendard', 'Montserrat', 'Montserrat', sans-serif;
+}
+
+
+
+.heading {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.label {
+  margin: 0 0 4px;
+  font-size: 18px;
+  font-weight: 600;
+  font-family:
+    'Montserrat';
+}
+
+.headTitle {
+  margin: 0;
+  font-size: 24px;
+  line-height: 1.5;
+  word-break: keep-all;
+}
+
+.heading h2 {
+  margin: 0;
+  font-size: clamp(24px, 2.2vw, 32px);
+  line-height: 1.5;
+  word-break: keep-all;
+}
+
+.content {
+  display: grid;
+  align-items: center;
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+.content p {
+  margin: 0;
+  font-size: 31px;
+  font-weight: 600;
+  line-height: 1.6;
+  word-break: keep-all;
+}
