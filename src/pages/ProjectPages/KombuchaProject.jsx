@@ -2,11 +2,27 @@ import { useId } from 'react';
 import styles from './KombuchaProject.module.css';
 
 const observations = [
-  ['배양 기간', '21일', '20°C–25°C 상온 유지'],
-  ['밀도 및 두께', '측정값 미기록', '홍차 / 당도 비율에 따른 수면 위 바이오 셀룰로오스 레이어 생성. 배양 성공 관찰.'],
-  ['질감 상태', '수분에 따른 변화', '건조 전에는 탄성을 보였고, 건조 후에는 단단한 가죽 / 종이 형태의 섬유질로 전환됨.'],
-  ['천연 착색', '고른 침투 관찰', '천연 염료가 셀룰로오스 섬유 조직 사이로 침투하며 고르게 착색되는 모습이 관찰됨.'],
-  ['수축률 변수', '비정형 수축', '건조 과정에서 가장자리부터 수축이 발생하며 유기적인 텍스처가 형성됨. 수축률 수치는 미기록.'],
+  ['배양 기간', '14일', '25°C–30°C 상온 유지 및 수면 위 바이오 셀룰로오스 레이어 형성'],
+  [
+    '밀도 및 두께',
+    '평균 0.8cm (0.5–1.0cm)',
+    '용기(통)별 상이하나 평균 0.8cm 수준으로 형성. 최소 0.5cm 내외의 균일한 막 관찰.'
+  ],
+  [
+    '질감 및 물성',
+    '고수분 ➔ 고탄성 섬유질',
+    '건조 전 수분 함유량이 높고 두꺼우나, 건조 후 손으로 찢기 힘들 만큼 뛰어난 인장 강도 및 탄성 형성 (가위/칼 가공 필요).'
+  ],
+  [
+    '천연 착색',
+    '차(Tea) 색상 중화 및 침투',
+    '선명한 발색 효과는 낮으나, 염색 과정을 통해 기존 찻물(홍차/녹차)의 어두운 침착색이 효과적으로 완화·중화됨.'
+  ],
+  [
+    '수축률 변수',
+    '두께 중심 수축 (면적 유지)',
+    '건조 과정에서 면적(원형) 변형은 미미하나 두께 측면의 수축이 집중적으로 발생하며 유기적인 질감 형성.'
+  ],
 ];
 const questions = [
   { topic: '재료의 권력', title: '통제하지 않는 디자인도 가능할까?', text: '우리는 왜 재료를 항상 인간이 원하는 형태대로 완벽히 통제해야만 가치 있다고 여길까? 재료의 비정형적 수축을 디자인의 요소로 받아들일 순 없을까?' },
@@ -20,6 +36,35 @@ const experiments = [
 ];
 const stages = ['배양 중의 레이어', '염료 침투와 표면', '건조 후의 질감', '가장자리의 수축'];
 
+const heroImage = {
+  src: '/project/01_kombucha/01.jpg',
+  alt: '콤부차 바이오 셀룰로오스의 표면과 결',
+  caption: '바이오 셀룰로오스 실험 기록',
+};
+
+const photos = [
+  {
+    src: '/project/01_kombucha/02.jpg',
+    alt: '배양 중 수면 위에 형성된 셀룰로오스 레이어',
+    caption: '배양 중의 레이어',
+  },
+  {
+    src: '/project/01_kombucha/03.jpg',
+    alt: '천연 염료로 착색한 셀룰로오스 표면',
+    caption: '염료 침투와 표면',
+  },
+  {
+    src: '/project/01_kombucha/04.jpg',
+    alt: '건조 후 셀룰로오스의 질감',
+    caption: '건조 후의 질감',
+  },
+  {
+    src: '/project/01_kombucha/05.jpg',
+    alt: '건조 과정에서 수축한 가장자리',
+    caption: '가장자리의 수축',
+  },
+];
+
 function Photo({ photo, label, index, hero = false }) {
   return (
     <figure className={hero ? styles.heroPhoto : styles.photo}>
@@ -30,7 +75,7 @@ function Photo({ photo, label, index, hero = false }) {
   );
 }
 
-export default function KombuchaProject({ heroImage, photos = [], toolkitHref = '/toolkit', backHref = '/#projects' }) {
+export default function KombuchaProject({ toolkitHref = '/toolkit', backHref = '/#projects' }) {
   const id = useId();
   const sections = ['data', 'insights', 'questions', 'future', 'toolkit'];
   const anchor = key => `${id}-${key}`;

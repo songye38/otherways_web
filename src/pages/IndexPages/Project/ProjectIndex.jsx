@@ -8,7 +8,7 @@ export const defaultProjects = [
     question: '생명체의 성장 메커니즘 자체를 구조체로 사용할 수 있을까?',
     description: '21일의 배양과 표면 염색 관찰에서 출발한 재료 실험. 형태를 만드는 대신, 물질이 자라날 조건을 탐구합니다.',
     tags: ['바이오 셀룰로오스', '배양', '표면 염색'],
-    href: '/project/kombucha', image: '/kombucha.jpg', imageAlt: '콤부차 바이오 셀룰로오스 실험 기록',
+    href: '/project/kombucha', image: '/project/01_kombucha/01.jpg', imageAlt: '콤부차 바이오 셀룰로오스 실험 기록',
   },
 ];
 
