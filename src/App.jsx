@@ -6,8 +6,9 @@ import WhatWeMake from './components/landingpage/WhatWeMake.jsx';
 import WhatWeSay from './components/landingpage/WhatWeSay.jsx';
 import Footer from './components/landingpage/Footer.jsx';
 import Header from './components/common/Header.jsx';
-import ProjectIndex from './pages/IndexPages/ProjectIndex.jsx';
-import NewsletterIndex from './pages/IndexPages/NewsletterIndex.jsx';
+import ToolkitIndex from './pages/IndexPages/Toolkit/ToolkitIndex.jsx';
+import ProjectIndex from './pages/IndexPages/Project/ProjectIndex.jsx';
+import NewsletterIndex from './pages/IndexPages/Newsletter/NewsletterIndex.jsx';
 import KombuchaProject from './pages/ProjectPages/KombuchaProject.jsx';
 
 export default function App() {
@@ -23,6 +24,18 @@ export default function App() {
             backHref="/project"
             toolkitHref="/toolkit"
           />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+    if (path === '/toolkit') {
+    return (
+      <>
+        <Header />
+        <main>
+          <ToolkitIndex />
         </main>
         <Footer />
       </>
