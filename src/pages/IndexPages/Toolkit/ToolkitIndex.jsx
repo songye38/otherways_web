@@ -31,11 +31,15 @@ export default function ToolkitIndex({ products = toolkits, homeHref = '/', news
   const visible = activeFilter === 'All' ? products : products.filter(p => p.category === activeFilter);
 
   return <article className={styles.page}><div className={styles.inner}>
-    <a className={styles.back} href={homeHref}>← OTHER WAYS 홈</a>
-    <header className={styles.heading}><p className={styles.eyebrow}>OTHER WAYS / TOOLKIT COLLECTION</p><div><h1>Tools for<br />your own way<span>.</span></h1><p>다르게 질문하고, 자유롭게 상상하고,<br />직접 만들어 보는 작은 도구들.</p></div></header>
+    {/* <a className={styles.back} href={homeHref}>← OTHER WAYS 홈</a> */}
+    <header className={styles.heading}>
+      {/* <p className={styles.eyebrow}>OTHER WAYS / TOOLKIT COLLECTION</p> */}
+    <div><h1>Tools for<br />your own way<span>.</span></h1><p>다르게 질문하고, 자유롭게 상상하고,<br />직접 만들어 보는 작은 도구들.</p></div></header>
 
     {product && <section className={styles.carousel} role="region" aria-roledescription="캐러셀" aria-labelledby={`${id}-featured`}>
-      <div className={styles.carouselTop}><h2 id={`${id}-featured`}>IN THE SPOTLIGHT</h2><span>{String(current + 1).padStart(2,'0')} / {String(slides.length).padStart(2,'0')}</span></div>
+      <div className={styles.carouselTop}>
+        <h2 id={`${id}-featured`}>IN THE SPOTLIGHT</h2>
+        <span>{String(current + 1).padStart(2,'0')} / {String(slides.length).padStart(2,'0')}</span></div>
       <div className={styles.slide} role="group" aria-roledescription="슬라이드" aria-label={`${current + 1} / ${slides.length}: ${product.name}`}>
         <ProductImage product={product} large />
         <div className={styles.featureCopy}><p className={styles.category}>{product.category}</p><h3>{product.name}</h3><p className={styles.tagline}>{product.tagline}</p><p className={styles.description}>{product.description}</p><ul className={styles.tags}>{product.tags?.map(tag => <li key={tag}>{tag}</li>)}</ul><div className={styles.featureBottom}><span className={styles.price}>{product.priceLabel}</span><ProductLink product={product} className={styles.primaryLink} /></div></div>
@@ -53,6 +57,6 @@ export default function ToolkitIndex({ products = toolkits, homeHref = '/', news
     </section>
 
     <aside className={styles.newsletter}><div><p>SMALL TOOLS, NEW QUESTIONS</p><h2>어디서 시작할지 고민된다면,<br />10분 실험부터.</h2></div><a href={newsletterHref}>편지와 실험 툴킷 만나보기 ↗</a></aside>
-    <div className={styles.bottom}><span>OTHER WAYS — QUESTION / IMAGINE / MAKE</span><a href={homeHref}>홈으로 돌아가기 ↗</a></div>
+    {/* <div className={styles.bottom}><span>OTHER WAYS — QUESTION / IMAGINE / MAKE</span><a href={homeHref}>홈으로 돌아가기 ↗</a></div> */}
   </div></article>;
 }

@@ -11,13 +11,13 @@
 .heading h1 span { color:var(--pink); }
 .heading div > p { font-size:16px; line-height:1.8; color:#777; letter-spacing:-.02em; margin:0; word-break:keep-all; }
 .carousel { margin-top:48px; border:1px solid #eadce5; background:#fbf6f9; border-radius:16px; overflow:hidden; }
-.carouselTop { display:flex; align-items:center; justify-content:space-between; gap:20px; padding:24px 32px 0; }
+.carouselTop { display:flex; align-items:center; justify-content:space-between; gap:20px; padding:16px 20px 0; }
 .carouselTop h2 { font-size:10px; letter-spacing:.1em; font-weight:500; color:#a03578; margin:0; }
 .carouselTop > span { font-size:11px; font-variant-numeric:tabular-nums; color:#777; }
-.slide { display:grid; grid-template-columns:1.1fr 1fr; gap:32px; padding:32px; align-items:center; }
-.productImage { display:grid; place-items:center; aspect-ratio:1/1; background:#f4f2ee; padding:24px; border-radius:12px; overflow:hidden; }
+.slide { display:grid; grid-template-columns:1.1fr 1fr; gap:24px; padding:20px; align-items:center; }
+.productImage { display:grid; place-items:center; aspect-ratio:1/1; background:white; padding:24px; border-radius:12px; overflow:hidden; }
 .productImage img { display:block; width:100%; height:100%; min-width:0; min-height:0; object-fit:contain; }
-.largeImage { aspect-ratio:1/1; background:#eee8e9; padding:32px; }
+.largeImage { aspect-ratio:1/1; background:#fbf6f9; padding:16px; } 
 .placeholder { display:flex; flex-direction:column; align-items:center; justify-content:center; gap:18px; width:100%; height:100%; text-align:center; color:#9a7f8e; }
 .placeholder > span:first-child { font-size:8px; letter-spacing:.09em; }
 .placeholder strong { font-size:clamp(20px,2vw,32px); font-weight:400; letter-spacing:-.035em; word-break:keep-all; }
@@ -34,7 +34,7 @@
 .primaryLink { display:inline-flex; align-items:center; gap:28px; background:var(--ink); color:#fff !important; border-radius:6px; padding:16px 20px; font-size:13px; text-decoration:none; }
 .primaryLink:hover:not(.pending) { background:#a03578; }
 .pending { opacity:.5; }
-.carouselControls { border-top:1px solid #eadce5; display:flex; justify-content:space-between; align-items:center; gap:20px; padding:16px 32px; }
+.carouselControls { border-top:1px solid #eadce5; display:flex; justify-content:space-between; align-items:center; gap:20px; padding:12px 20px; }
 .controlsHint { font-size:11px; color:#777; }
 .dots { display:flex; gap:6px; }
 .dots button { width:28px; height:32px; padding:0; background:none; border:0; cursor:pointer; display:grid; place-items:center; }
