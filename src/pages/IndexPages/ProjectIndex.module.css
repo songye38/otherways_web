@@ -1,0 +1,62 @@
+.page { --pink: #ce479c; --ink: #20201e; background: #fff; color: var(--ink); color-scheme: light; padding: 48px 48px 40px 260px; font-family: 'Outfit','Montserrat','Apple SD Gothic Neo','Malgun Gothic',sans-serif; }
+.page *, .page *::before, .page *::after { box-sizing: border-box; }
+.inner { max-width: 1160px; margin: 0 auto; }
+.page a { color: inherit; }
+.page a:focus-visible, .filters button:focus-visible { outline: 2px solid var(--pink); outline-offset: 6px; }
+.back { display: inline-block; text-decoration: none; font-size: 13px; margin-bottom: 72px; }
+.back:hover { text-decoration: underline; }
+.eyebrow { font-size: 11px; letter-spacing: .1em; margin: 0 0 32px; }
+.heroRow { display: grid; grid-template-columns: 1.3fr 1fr; gap: 40px; align-items: end; }
+.hero h1 { font-size: clamp(48px,5.5vw,84px); line-height: 1.02; font-weight: 500; letter-spacing: -.055em; margin: 0; }
+.hero h1 span { color: var(--pink); }
+.heroCopy > p:first-child { margin: 0 0 24px; font-size: clamp(22px,2.3vw,30px); line-height: 1.5; font-weight: 500; letter-spacing: -.04em; word-break: keep-all; }
+.heroCopy > p:last-child { margin: 0; font-size: 14px; line-height: 1.9; color: #777; word-break: keep-all; }
+.heroBottom { margin-top: 48px; padding: 22px 0; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+.heroBottom > span { color: #777; font-size: 10px; letter-spacing: .07em; }
+.heroBottom a { font-size: 12px; text-decoration: none; }
+.archive { padding: 64px 0 80px; scroll-margin-top: 32px; }
+.archiveTop { display: flex; align-items: baseline; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+.archiveTop h2 { margin: 0; font-size: 26px; font-weight: 500; letter-spacing: -.03em; }
+.archiveTop h2 span { font-size: 13px; margin-left: 14px; vertical-align: super; color: var(--pink); }
+.archiveTop > p { color: #777; font-size: 12px; margin: 0; }
+.filters { display: flex; gap: 8px; flex-wrap: wrap; margin: 28px 0 32px; }
+.filters button { background: #fff; color: #777; font: inherit; font-size: 12px; border: 1px solid #ddd; padding: 10px 16px; border-radius: 30px; cursor: pointer; }
+.filters button span { font-size: 10px; margin-left: 12px; }
+.filters button.active { background: var(--ink); color: #fff; border-color: var(--ink); }
+.filters button:hover:not(.active) { border-color: var(--pink); color: var(--pink); }
+.grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 48px 28px; }
+.card { display: block; text-decoration: none; }
+.imageWrap { position: relative; overflow: hidden; border-radius: 12px; background: #efede8; }
+.imageWrap img { display: block; width: 100%; aspect-ratio: 3/2; object-fit: cover; transition: transform .35s; }
+.card:hover .imageWrap img { transform: scale(1.035); }
+.placeholder { aspect-ratio: 3/2; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 12px; padding: 48px 20px; color: #817c73; background-image: linear-gradient(#ffffff65 1px,transparent 1px),linear-gradient(90deg,#ffffff65 1px,transparent 1px); background-size: 32px 32px; }
+.placeholder > span { font-size: 9px; letter-spacing: .12em; }
+.placeholder > div { font-size: 44px; font-weight: 300; }
+.placeholder strong { font-size: 22px; font-weight: 400; }
+.placeholder small { font-size: 11px; }
+.imageLabel { position: absolute; top: 18px; left: 18px; background: #fff; color: var(--ink); font-size: 9px; letter-spacing: .06em; padding: 8px 10px; border-radius: 4px; }
+.arrow { position: absolute; bottom: 16px; right: 16px; width: 40px; height: 40px; display: grid; place-items: center; border-radius: 50%; background: #fff; font-size: 22px; transition: background .2s,color .2s; }
+.card:hover .arrow { background: var(--pink); color: #fff; }
+.cardBody { padding: 24px 0 0; }
+.category { margin: 0 0 14px; font-size: 11px; color: var(--pink); letter-spacing: .06em; }
+.card h3 { font-size: 24px; line-height: 1.45; font-weight: 500; letter-spacing: -.035em; word-break: keep-all; margin: 0; }
+.question { margin: 20px 0 0; font-size: 17px; line-height: 1.7; letter-spacing: -.03em; word-break: keep-all; }
+.description { margin: 14px 0 0; font-size: 14px; color: #777; line-height: 1.85; word-break: keep-all; }
+.tags { display: flex; gap: 8px; flex-wrap: wrap; list-style: none; margin: 22px 0; padding: 0; }
+.tags li { font-size: 10px; color: #777; border: 1px solid #ddd; padding: 6px 10px; border-radius: 24px; }
+.read { font-size: 12px; display: inline-flex; align-items: center; gap: 16px; border-bottom: 1px solid #aaa; padding-bottom: 8px; }
+.single { grid-template-columns: 1fr; }
+.single .card { display: grid; grid-template-columns: 1.2fr 1fr; gap: 40px; align-items: center; }
+.single .cardBody { padding: 0; }
+.note { background: #fbf2f8; padding: 44px; border-radius: 12px; display: grid; grid-template-columns: 1fr auto; align-items: end; gap: 24px; }
+.note > span { grid-column: 1/-1; font-size: 10px; letter-spacing: .08em; color: #a03578; }
+.note p { font-size: clamp(22px,2.3vw,30px); font-weight: 500; letter-spacing: -.04em; line-height: 1.5; margin: 0; word-break: keep-all; }
+.note a { font-size: 12px; text-decoration: none; border-bottom: 1px solid #a03578; padding-bottom: 8px; }
+.note a:hover { color: #a03578; }
+.bottom { padding-top: 40px; display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; font-size: 10px; color: #777; }
+.bottom a { text-decoration: none; font-size: 12px; }
+.empty { padding: 48px 0; color: #777; font-size: 15px; line-height: 1.8; }
+.visuallyHidden { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+@media(max-width:1100px) { .page { padding-left: 220px; padding-right: 32px; } .heroRow { grid-template-columns: 1fr; gap: 32px; } .single .card { grid-template-columns: 1fr; gap: 24px; } .note { grid-template-columns: 1fr; } .note a { justify-self: start; } }
+@media(max-width:760px) { .page { padding: 280px 24px 32px; } .back { margin-bottom: 48px; } .hero h1 { font-size: clamp(44px,10vw,64px); } .heroCopy > p:last-child br { display: none; } .grid { grid-template-columns: 1fr; gap: 40px; } .archive { padding: 48px 0 56px; } .card h3 { font-size: 22px; } .note { padding: 28px; } .heroBottom { margin-top: 36px; } }
+@media(prefers-reduced-motion:reduce) { .imageWrap img, .arrow { transition: none; } .card:hover .imageWrap img { transform: none; } }

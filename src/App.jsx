@@ -6,12 +6,60 @@ import WhatWeMake from './components/landingpage/WhatWeMake.jsx';
 import WhatWeSay from './components/landingpage/WhatWeSay.jsx';
 import Footer from './components/landingpage/Footer.jsx';
 import Header from './components/common/Header.jsx';
+import ProjectIndex from './pages/IndexPages/ProjectIndex.jsx';
+import NewsletterIndex from './pages/IndexPages/NewsletterIndex.jsx';
+import KombuchaProject from './pages/ProjectPages/KombuchaProject.jsx';
 
 export default function App() {
+  const path = window.location.pathname.replace(/\/+$/, '') || '/';
+
+    // 콤부차 상세 페이지
+  if (path === '/project/kombucha') {
+    return (
+      <>
+        <Header />
+        <main>
+          <KombuchaProject
+            backHref="/project"
+            toolkitHref="/toolkit"
+          />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  // 프로젝트 목록
+  if (path === '/project') {
+    return (
+      <>
+        <Header />
+        <main>
+          <ProjectIndex />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  if (path === '/newsletter') {
+    return (
+      <>
+        <Header />
+        <main>
+          <NewsletterIndex />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  // 랜딩페이지
   return (
     <>
       <Header />
-      <main>
+
+      <main id="top">
         <div id="hero">
           <WhiteFlight
             showCaption={false}
@@ -25,9 +73,9 @@ export default function App() {
         <WhatWeSell />
         <WhatWeMake />
         <WhatWeSay />
-
-        <Footer />
       </main>
+
+      <Footer />
     </>
   );
 }
