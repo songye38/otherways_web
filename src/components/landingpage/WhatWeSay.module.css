@@ -16,7 +16,13 @@
 .subtitle { margin: 28px 0 0; font-size: clamp(18px, 2vw, 24px); line-height: 1.6; font-weight: 500; letter-spacing: -.035em; word-break: keep-all; }
 .body { margin: 24px auto 0; max-width: 760px; font-size: 16px; line-height: 1.9; color: #666; letter-spacing: -.025em; word-break: keep-all; overflow-wrap: anywhere; }
 .mobileBreak { display: none; }
-.signup { margin: 56px auto 0; max-width: 740px; border-top: 1px solid #e3e3e3; padding-top: 40px; }
+.signup {
+  margin: 0px auto 0;
+  max-width: 740px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+}
 .benefit { padding: 32px 36px; background: #fbf0f7; border: 1px solid #edcfe1; border-radius: 16px; }
 .benefitLabel { margin: 0 0 20px; color: #a62775; font-size: 12px; font-weight: 600; letter-spacing: .09em; display: flex; align-items: center; gap: 10px; }
 .benefitLabel span { font-size: 23px; line-height: 1; }
@@ -39,6 +45,14 @@
 .message:empty { display: none; }
 .error { color: #a0253d; }
 .visuallyHidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+
+.subscribe > p { font-size:10px; color:var(--pink); letter-spacing:.08em; margin:0 0 24px; }
+.subscribe > div { display:flex; align-items:flex-end; justify-content:space-between; gap:24px; flex-wrap:wrap; }
+.subscribe h2 { font-size:clamp(28px,3vw,40px); font-weight:500; line-height:1.4; letter-spacing:-.04em; margin:0; }
+.subscribe a { display:flex; align-items:center; gap:28px; padding:18px 24px; background:black; color:#fff; border-radius:6px; text-decoration:none; font-size:13px; }
+.subscribe a:hover { background:#a03578; }
+
+
 @media (max-width: 640px) {
   .mobileBreak { display: initial; }
   .body br { display: none; }

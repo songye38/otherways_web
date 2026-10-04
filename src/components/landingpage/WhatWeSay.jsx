@@ -52,36 +52,24 @@ export default function WhatWeSay({ onSubscribe }) {
         </header>
 
         <div className={styles.signup}>
-          <aside className={styles.benefit} aria-labelledby={`${id}-benefit`}>
-            <p id={`${id}-benefit`} className={styles.benefitLabel}><span aria-hidden="true">↗</span> PRE-ORDER BENEFIT</p>
-            <p className={styles.benefitCopy}>
-              지금 10월 사전 구독을 완료하시는 모든 분께<br />
-              생각을 즉시 실체화하는 <strong>‘10-Min Toolkit 샘플 PDF’</strong>를<br />
-              이메일로 즉시 발송해 드립니다.
-            </p>
-            <ul className={styles.includes}>
-              <li>Vol.01~03 핵심 프레임워크 시트 포함</li>
-              <li>완벽주의를 깨는 10분 액션 가이드 포함</li>
-            </ul>
-          </aside>
-
-          <form onSubmit={submit} className={styles.form} aria-busy={status === 'loading'}>
-            <label htmlFor={`${id}-email`} className={styles.visuallyHidden}>구독할 이메일 주소</label>
-            <div className={styles.inputRow}>
-              <input id={`${id}-email`} type="email" name="email" autoComplete="email" required
-                placeholder="name@example.com" value={email}
-                aria-describedby={`${id}-note ${id}-message`}
-                disabled={status === 'loading' || status === 'success'}
-                onChange={event => { setEmail(event.target.value); if (status === 'error') { setStatus('idle'); setMessage(''); } }} />
-              <button type="submit" disabled={status === 'loading' || status === 'success'}>
-                {status === 'loading' ? '신청 중…' : status === 'success' ? '구독 신청 완료 ✓' : '사전 구독 신청하기'}
-                {status !== 'success' && <span aria-hidden="true">↗</span>}
-              </button>
+          <aside className={styles.subscribe}>
+            <div>
+              
+              <a href="https://makeways.stibee.com/subscribe" target="_blank" rel="noopener noreferrer">뉴스레터 구독하기 <span aria-hidden="true">↗</span></a>
             </div>
-            <p id={`${id}-note`} className={styles.note}>*스팸은 보내지 않으며, 언제든 구독을 해지할 수 있습니다.</p>
-            <p id={`${id}-message`} className={`${styles.message} ${status === 'error' ? styles.error : ''}`}
-              role="status" aria-live="polite" aria-atomic="true">{message}</p>
-          </form>
+            </aside>
+          {/* <a
+            href="https://실제-뉴스레터-구독주소"
+            className={styles.subscribeButton}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            뉴스레터 구독하기
+            <span aria-hidden="true">↗</span>
+            <span className={styles.visuallyHidden}>
+              (새 탭에서 열림)
+            </span>
+          </a> */}
         </div>
       </div>
     </section>
