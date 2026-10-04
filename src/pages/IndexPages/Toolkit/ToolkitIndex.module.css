@@ -63,8 +63,8 @@
 .cardLink:hover:not(.pending) { color:var(--pink); }
 .newsletter { display:flex; justify-content:space-between; align-items:flex-end; gap:28px; flex-wrap:wrap; background:#f5f4f0; border-radius:12px; padding:36px; }
 .newsletter div > p { font-size:10px; letter-spacing:.07em; color:#777; margin:0 0 20px; }
-.newsletter h2 { font-size:clamp(23px,2.4vw,32px); font-weight:500; line-height:1.5; letter-spacing:-.035em; margin:0; word-break:keep-all; }
-.newsletter a { font-size:12px; text-decoration:none; padding-bottom:8px; border-bottom:1px solid #aaa; }
+.newsletter h2 { font-size:clamp(20px,2.4vw,24px); font-weight:500; line-height:1.5; letter-spacing:-.035em; margin:0; word-break:keep-all; }
+.newsletter a { font-size:16px; text-decoration:none; padding-bottom:8px; border-bottom:1px solid #aaa; }
 .bottom { padding-top:36px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:20px; color:#777; font-size:10px; }
 .bottom a { font-size:12px; text-decoration:none; }
 .empty { padding:40px 0; color:#777; font-size:14px; }

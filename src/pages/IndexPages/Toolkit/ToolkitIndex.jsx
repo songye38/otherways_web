@@ -56,7 +56,13 @@ export default function ToolkitIndex({ products = toolkits, homeHref = '/', news
       {visible.length === 0 && <p className={styles.empty}>새로운 툴킷을 준비하고 있습니다.</p>}
     </section>
 
-    <aside className={styles.newsletter}><div><p>SMALL TOOLS, NEW QUESTIONS</p><h2>어디서 시작할지 고민된다면,<br />10분 실험부터.</h2></div><a href={newsletterHref}>편지와 실험 툴킷 만나보기 ↗</a></aside>
+    <aside className={styles.newsletter}>
+      <div>
+        {/* <p>SMALL TOOLS, NEW QUESTIONS</p> */}
+        <h2>어디서 시작할지 고민된다면, 10분 실험부터 시작해보세요.</h2>
+        </div>
+        <a href={newsletterHref}>무료 툴킷 사용해보기 ↗</a>
+        </aside>
     {/* <div className={styles.bottom}><span>OTHER WAYS — QUESTION / IMAGINE / MAKE</span><a href={homeHref}>홈으로 돌아가기 ↗</a></div> */}
   </div></article>;
 }

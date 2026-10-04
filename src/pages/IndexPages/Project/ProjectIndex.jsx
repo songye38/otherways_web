@@ -26,11 +26,11 @@ export default function ProjectIndex({ projects = defaultProjects, homeHref = '/
         <header className={styles.hero}>
           {/* <p className={styles.eyebrow}>OTHER WAYS / PROJECT ARCHIVE</p> */}
           <div className={styles.heroRow}><h1>Questions<br />in the making<span>.</span></h1><div className={styles.heroCopy}><p>질문을 던지고,<br />직접 만들어 본 기록.</p><p>재료를 배양하고, 관점을 비틀고, 손으로 실험합니다.<br />완성된 결과와 그 과정에서 생겨난 질문을 함께 모읍니다.</p></div></div>
-          <div className={styles.heroBottom}><span>RESEARCH · EXPERIMENTS · WORKSHOPS</span><a href={`#${id}-archive`}>프로젝트 살펴보기 ↓</a></div>
+          {/* <div className={styles.heroBottom}><span>RESEARCH · EXPERIMENTS · WORKSHOPS</span><a href={`#${id}-archive`}>프로젝트 살펴보기 ↓</a></div> */}
         </header>
 
         <section className={styles.archive} id={`${id}-archive`} aria-labelledby={`${id}-title`}>
-          <div className={styles.archiveTop}><h2 id={`${id}-title`}>전체 프로젝트 <span>{String(projects.length).padStart(2, '0')}</span></h2><p>새로운 가능성을 탐구하는 작은 실험들</p></div>
+          <div className={styles.archiveTop}><h2 id={`${id}-title`}>전체 프로젝트 <span>{String(projects.length).padStart(2, '0')}</span></h2></div>
           <div className={styles.filters} role="group" aria-label="프로젝트 분야 선택">{categories.map(item => <button key={item} type="button" aria-pressed={activeCategory === item} onClick={() => setCategory(item)} className={activeCategory === item ? styles.active : ''}>{item === 'All' ? '전체' : item}<span>{item === 'All' ? projects.length : projects.filter(p => p.category === item).length}</span></button>)}</div>
           <p className={styles.visuallyHidden} role="status" aria-live="polite">{activeCategory === 'All' ? '전체' : activeCategory} 프로젝트 {visible.length}개</p>
 
