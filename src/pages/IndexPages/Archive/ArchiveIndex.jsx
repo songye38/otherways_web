@@ -15,16 +15,39 @@ export default function ArchiveIndex({ items = archiveItems, homeHref = '/', new
   const id = useId();
   const [query, setQuery] = useState('');
   const [category, setCategory] = useState('');
+  const [projectType, setProjectType] = useState('');
   const [tags, setTags] = useState([]);
   const [limit, setLimit] = useState(PAGE_SIZE);
   const categories = [...new Set(items.map(item => item.category).filter(Boolean))];
+  const projectTypes = [
+    ...new Set(items.map(item => item.projectType).filter(Boolean)),
+  ];
+
+  const activeProjectType = projectTypes.includes(projectType)
+    ? projectType
+    : '';
   const allTags = [...new Set(items.flatMap(item => item.tags || []))];
   const activeCategory = categories.includes(category) ? category : '';
   const activeTags = tags.filter(tag => allTags.includes(tag));
-  const filtered = filterArchive(items, { query, category: activeCategory, tags: activeTags });
+  const filtered = filterArchive(items, {
+    query,
+    category: activeCategory,
+    projectType: activeProjectType,
+    tags: activeTags,
+  });
   const visible = filtered.slice(0, limit);
-  const hasFilters = query.trim() || activeCategory || activeTags.length > 0;
-  function reset() { setQuery(''); setCategory(''); setTags([]); setLimit(PAGE_SIZE); }
+  const hasFilters =
+    query.trim() ||
+    activeCategory ||
+    activeProjectType ||
+    activeTags.length > 0;
+  function reset() {
+    setQuery('');
+    setCategory('');
+    setProjectType('');
+    setTags([]);
+    setLimit(PAGE_SIZE);
+  }
   function toggleTag(tag) { setTags(current => current.includes(tag) ? current.filter(t => t !== tag) : [...current, tag]); setLimit(PAGE_SIZE); }
 
   return <article className={styles.page}><div className={styles.inner}>
@@ -37,8 +60,90 @@ export default function ArchiveIndex({ items = archiveItems, homeHref = '/', new
 
     <section className={styles.archive} aria-labelledby={`${id}-title`}>
       <div className={styles.toolbar}><h2 id={`${id}-title`}>전체 사례 <span>{String(items.length).padStart(2, '0')}</span></h2><div className={styles.search}><span aria-hidden="true">⌕</span><label className={styles.visuallyHidden} htmlFor={`${id}-search`}>프로젝트, 핵심 질문, 카테고리, 태그 검색</label><input id={`${id}-search`} type="search" placeholder="프로젝트나 질문을 검색하세요" value={query} onChange={e => { setQuery(e.target.value); setLimit(PAGE_SIZE); }} /></div></div>
+      {projectTypes.length > 0 && (
+        <div className={styles.filterGroup}>
+          <p>프로젝트 유형</p>
+
+          <div
+            className={styles.chips}
+            role="group"
+            aria-label="프로젝트 유형 필터"
+          >
+            <button
+              type="button"
+              aria-pressed={!activeProjectType}
+              className={!activeProjectType ? styles.active : ''}
+              onClick={() => {
+                setProjectType('');
+                setLimit(PAGE_SIZE);
+              }}
+            >
+              전체 <small>{items.length}</small>
+            </button>
+
+            {projectTypes.map(value => (
+              <button
+                key={value}
+                type="button"
+                aria-pressed={activeProjectType === value}
+                className={
+                  activeProjectType === value ? styles.active : ''
+                }
+                onClick={() => {
+                  setProjectType(value);
+                  setLimit(PAGE_SIZE);
+                }}
+              >
+                {value}
+                <small>
+                  {items.filter(item => item.projectType === value).length}
+                </small>
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
       {categories.length > 0 && <div className={styles.filterGroup}><p>카테고리</p><div className={styles.chips} role="group" aria-label="카테고리 필터"><button type="button" aria-pressed={!activeCategory} className={!activeCategory ? styles.active : ''} onClick={() => { setCategory(''); setLimit(PAGE_SIZE); }}>전체 <small>{items.length}</small></button>{categories.map(value => <button key={value} type="button" aria-pressed={activeCategory === value} className={activeCategory === value ? styles.active : ''} onClick={() => { setCategory(value); setLimit(PAGE_SIZE); }}>{value}<small>{items.filter(item => item.category === value).length}</small></button>)}</div></div>}
-      {allTags.length > 0 && <div className={styles.filterGroup}><p>태그 <small>복수 선택</small></p><div className={styles.chips} role="group" aria-label="선택한 태그를 모두 포함하는 사례 보기">{allTags.map(tag => <button key={tag} type="button" aria-pressed={activeTags.includes(tag)} className={activeTags.includes(tag) ? styles.activeTag : styles.tagButton} onClick={() => toggleTag(tag)}>#{tag}</button>)}</div></div>}
+      {allTags.length > 0 && (
+        <details className={styles.tagDetails}>
+          <summary className={styles.tagSummary}>
+            <span>
+              태그 필터
+              {activeTags.length > 0 && ` · ${activeTags.length}개 선택`}
+            </span>
+            <span className={styles.tagToggle} aria-hidden="true">
+              ＋
+            </span>
+          </summary>
+
+          <div
+            className={styles.chips}
+            role="group"
+            aria-label="선택한 태그를 모두 포함하는 사례 보기"
+          >
+            {allTags.map(tag => (
+              <button
+                key={tag}
+                type="button"
+                aria-pressed={activeTags.includes(tag)}
+                className={
+                  activeTags.includes(tag)
+                    ? styles.activeTag
+                    : styles.tagButton
+                }
+                onClick={() => toggleTag(tag)}
+              >
+                #{tag}
+              </button>
+            ))}
+          </div>
+        </details>
+      )}
+
+
+
+
+
       <div className={styles.results}><p role="status" aria-live="polite"><strong>{filtered.length}</strong>개의 사례{activeTags.length > 1 && <span> · 선택한 태그를 모두 포함</span>}</p>{hasFilters && <button type="button" onClick={reset}>필터 초기화 ↺</button>}</div>
       <div className={styles.grid}>{visible.map(item => {
         const url = externalUrl(item.sourceUrl);
