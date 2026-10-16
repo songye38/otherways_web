@@ -22,6 +22,7 @@
   align-items: center;
   gap: 20px;
   flex-wrap: nowrap;
+  margin: 32px 0 28px;
 }
 .archiveHeading h2 {
   display: flex;

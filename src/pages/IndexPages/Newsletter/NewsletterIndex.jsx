@@ -36,10 +36,10 @@ export default function NewsletterIndex({ issues = newsletterIssues, homeHref = 
 
       <section className={styles.archive} aria-labelledby={`${id}-title`}>
         <div className={styles.archiveHeading}><h2 id={`${id}-title`}>전체 뉴스레터<span>{String(issues.length).padStart(2, '0')}</span></h2></div>
-        <div className={styles.filters}>
+        {/* <div className={styles.filters}>
           <div className={styles.search}><label className={styles.visuallyHidden} htmlFor={`${id}-search`}>호수, 뉴스레터 제목 또는 실험 제목 검색</label><span aria-hidden="true">⌕</span><input id={`${id}-search`} type="search" placeholder="편지 제목이나 10분 실험 찾기" value={query} onChange={event => setQuery(event.target.value)} /></div>
-          {/* <div className={styles.year}><label htmlFor={`${id}-year`}>발행 연도</label><select id={`${id}-year`} value={activeYear} onChange={event => setYear(event.target.value)}><option value="all">전체</option>{years.map(value => <option key={value} value={value}>{value}년</option>)}</select></div> */}
-        </div>
+          <div className={styles.year}><label htmlFor={`${id}-year`}>발행 연도</label><select id={`${id}-year`} value={activeYear} onChange={event => setYear(event.target.value)}><option value="all">전체</option>{years.map(value => <option key={value} value={value}>{value}년</option>)}</select></div>
+        </div> */}
         <p className={styles.visuallyHidden} role="status" aria-live="polite">편지 {visible.length}개</p>
         <ol className={styles.issues}>{visible.map(issue => <li key={issue.number} className={styles.issue}>
           <div className={styles.issueMeta}><span className={styles.number}>{String(issue.number).padStart(2, '0')}<small>호</small></span>{/^\d{4}-\d{2}-\d{2}$/.test(issue.date || '') ? <time dateTime={issue.date}>{dateLabel(issue.date)}</time> : <span className={styles.date}>발행일 미정</span>}</div>
