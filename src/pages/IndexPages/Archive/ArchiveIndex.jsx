@@ -13,6 +13,7 @@ function Thumbnail({ item }) {
 
 export default function ArchiveIndex({ items = archiveItems, homeHref = '/', newsletterHref = '/newsletter' }) {
   const id = useId();
+  const [view, setView] = useState('card');
   const [query, setQuery] = useState('');
   const [category, setCategory] = useState('');
   const [projectType, setProjectType] = useState('');
@@ -145,14 +146,51 @@ export default function ArchiveIndex({ items = archiveItems, homeHref = '/', new
 
 
       <div className={styles.results}><p role="status" aria-live="polite"><strong>{filtered.length}</strong>개의 사례{activeTags.length > 1 && <span> · 선택한 태그를 모두 포함</span>}</p>{hasFilters && <button type="button" onClick={reset}>필터 초기화 ↺</button>}</div>
-      <div className={styles.grid}>{visible.map(item => {
-        const url = externalUrl(item.sourceUrl);
-        return <article key={item.id} className={styles.card} aria-labelledby={`${id}-card-${item.id}`}>
-          <Thumbnail item={item} />
-          {item.imageCredit && <p className={styles.credit}>이미지: {item.imageCredit}</p>}
-          <div className={styles.cardBody}><p className={styles.category}>{item.category}</p><h3 id={`${id}-card-${item.id}`}>{item.question}</h3><div className={styles.question}><p>{item.name}</p></div><ul className={styles.cardTags}>{item.tags?.map(tag => <li key={tag}><button type="button" aria-pressed={activeTags.includes(tag)} className={activeTags.includes(tag) ? styles.selectedCardTag : ''} onClick={() => toggleTag(tag)}>#{tag}</button></li>)}</ul><div className={styles.cardFooter}>{url ? <a href={url} target="_blank" rel="noopener noreferrer">원문 보기 <span aria-hidden="true">↗</span><span className={styles.visuallyHidden}> — {item.name}, 새 탭에서 열림</span></a> : <span className={styles.pending}>원문 링크 준비 중</span>}</div></div>
-        </article>;
-      })}</div>
+
+
+
+      <div
+        className={styles.viewSwitch}
+        role="group"
+        aria-label="사례 보기 유형"
+      >
+        <button
+          type="button"
+          aria-pressed={view === 'card'}
+          onClick={() => setView('card')}
+        >
+          카드 보기
+        </button>
+
+        <button
+          type="button"
+          aria-pressed={view === 'text'}
+          onClick={() => setView('text')}
+        >
+          텍스트 보기
+        </button>
+      </div>
+      <div
+        className={`${styles.grid} ${view === 'text' ? styles.textView : ''
+          }`}
+      >
+        {visible.map(item => {
+          const url = externalUrl(item.sourceUrl);
+          return <article key={item.id} className={styles.card} aria-labelledby={`${id}-card-${item.id}`}>
+            {view === 'card' && (
+              <>
+                <Thumbnail item={item} />
+
+                {item.imageCredit && (
+                  <p className={styles.credit}>
+                    이미지: {item.imageCredit}
+                  </p>
+                )}
+              </>
+            )}
+            <div className={styles.cardBody}><p className={styles.category}>{item.category}</p><h3 id={`${id}-card-${item.id}`}>{item.question}</h3><div className={styles.question}><p>{item.name}</p></div><ul className={styles.cardTags}>{item.tags?.map(tag => <li key={tag}><button type="button" aria-pressed={activeTags.includes(tag)} className={activeTags.includes(tag) ? styles.selectedCardTag : ''} onClick={() => toggleTag(tag)}>#{tag}</button></li>)}</ul><div className={styles.cardFooter}>{url ? <a href={url} target="_blank" rel="noopener noreferrer">원문 보기 <span aria-hidden="true">↗</span><span className={styles.visuallyHidden}> — {item.name}, 새 탭에서 열림</span></a> : <span className={styles.pending}>원문 링크 준비 중</span>}</div></div>
+          </article>;
+        })}</div>
       {filtered.length === 0 && <div className={styles.empty}><span>{items.length ? 'NO MATCHES' : 'THE COLLECTION BEGINS HERE'}</span><h3>{items.length ? '아직 맞는 사례를 찾지 못했어요.' : '새로운 사례를 모으고 있습니다.'}</h3><p>{items.length ? '다른 검색어를 입력하거나 선택한 필터를 줄여보세요.' : '수집한 프로젝트와 질문을 이곳에서 만나보세요.'}</p>{hasFilters && <button type="button" onClick={reset}>전체 사례 보기</button>}</div>}
       {filtered.length > visible.length && <div className={styles.loadMore}><button type="button" onClick={() => setLimit(current => current + PAGE_SIZE)}>사례 더 보기 <span>{visible.length} / {filtered.length}</span><b aria-hidden="true">＋</b></button></div>}
     </section>
