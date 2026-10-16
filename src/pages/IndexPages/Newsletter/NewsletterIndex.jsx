@@ -58,7 +58,7 @@ export default function NewsletterIndex({ issues = newsletterIssues, homeHref = 
           {/* <p>SMALL TOOLS, NEW QUESTIONS</p> */}
           <h2>다음 질문은, 메일함에서 만나보세요.</h2>
         </div>
-        <a href={'/newsletter'}>뉴스레터 구독하기 ↗</a>
+        <a href={'https://makeways.stibee.com/subscribe'}>뉴스레터 구독하기 ↗</a>
       </aside>
       {/* <div className={styles.bottom}><span>OTHER WAYS — LETTERS FOR OUTLIERS</span><a href={homeHref}>홈으로 돌아가기 ↗</a></div> */}
 
