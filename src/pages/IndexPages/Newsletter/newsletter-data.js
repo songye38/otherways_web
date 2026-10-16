@@ -22,7 +22,7 @@ export const newsletterIssues = [
     date: '2026-10-13',
     title: '당연한 것 하나를 지워본다면?',
     newsletterUrl: 'https://makeways.stibee.com/p/3',
-    experimentTitle: '당연한 규칙 하나 지우기,
+    experimentTitle: '당연한 규칙 하나 지우기',
     toolkitUrl: 'https://실제-툴킷-주소',
   },
     {
