@@ -34,7 +34,7 @@ export default function ToolkitIndex({ products = toolkits, homeHref = '/', news
     {/* <a className={styles.back} href={homeHref}>← OTHER WAYS 홈</a> */}
     <header className={styles.heading}>
       {/* <p className={styles.eyebrow}>OTHER WAYS / TOOLKIT COLLECTION</p> */}
-    <div><h1>Tools for<br />your own way<span>.</span></h1><p>다르게 질문하고, 자유롭게 상상하고,<br />직접 만들어 보는 작은 도구들.</p></div></header>
+    <div><h1>Product for<br />your own way<span>.</span></h1><p>다르게 질문하고, 자유롭게 상상하고,<br />직접 만들어 보는 작은 도구들.</p></div></header>
 
     {product && <section className={styles.carousel} role="region" aria-roledescription="캐러셀" aria-labelledby={`${id}-featured`}>
       <div className={styles.carouselTop}>

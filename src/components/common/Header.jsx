@@ -67,9 +67,10 @@ export default function Header() {
       </p>
 
       <nav className={styles.nav} aria-label="주요 메뉴">
-        <a href="/toolkit">Toolkit</a>
+        <a href="/toolkit">Product</a>
         <a href="/project">Project</a>
         <a href="/newsletter">Newsletter</a>
+        <a href="/archive">Archive</a>
       </nav>
     </header>
   );
