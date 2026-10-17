@@ -4,6 +4,7 @@ export const archiveItems = [
   {
     id: '01',
     name: 'Wanderer',
+    publishedAt: '2026-10-12',
     question: '사용자가 마음대로 조작할 수 없는 앱이라면?',
     category: '실험적 디자인',
     projectType: '논문',
@@ -18,6 +19,7 @@ export const archiveItems = [
   {
     id: '02',
     name: 'TOUT EST CHAOS',
+    publishedAt: '2026-10-12',
     question: '디자인은 꼭 문제를 해결해야 할까?',
     category: '크리티컬 디자인',
     projectType: '디자인위크',
@@ -32,6 +34,7 @@ export const archiveItems = [
   {
     id: '03',
     name: 'The Pluriversity',
+    publishedAt: '2026-10-12',
     question: '대학이 ‘취업을 준비하는 곳’이 아니라 ‘지역을 회복시키는 곳’이라면?',
     category: '스페큘러티브 디자인',
     projectType: '프로젝트',
@@ -46,6 +49,7 @@ export const archiveItems = [
   {
     id: '04',
     name: 'SLIPSTREAM: Uncharted Realities & the Eternal Now',
+    publishedAt: '2026-10-12',
     question: '미래는 누구의 상상으로 만들어질까?',
     category: '크리티컬 디자인',
     projectType: '설치·전시',
@@ -60,6 +64,7 @@ export const archiveItems = [
   {
     id: '05',
     name: 'Amphibious Humanity',
+    publishedAt: '2026-10-12',
     question: '인간 아닌 감각으로 세상을 본다면?',
     category: '실험적 디자인',
     projectType: '설치·전시',
@@ -74,6 +79,7 @@ export const archiveItems = [
   {
     id: '06',
     name: 'The Aboriginal Robot',
+    publishedAt: '2026-10-12',
     question: 'AI에게 원주민의 지식을 넣으면 좋은 AI가 되는 걸까?',
     category: '디자인 픽션',
     projectType: '설치·전시',
@@ -88,6 +94,7 @@ export const archiveItems = [
   {
     id: '07',
     name: 'Probably A Dog',
+    publishedAt: '2026-10-12',
     question: 'AI가 장인의 ‘속도’를 배운다면?',
     category: '실험적 디자인',
     projectType: '설치·전시',
@@ -102,6 +109,7 @@ export const archiveItems = [
   {
     id: '08',
     name: 'Co-Creating Educational Futures',
+    publishedAt: '2026-10-12',
     question: 'AI에게 미래를 물었더니 왜 자꾸 비슷한 미래가 나올까?',
     category: '디자인 리서치',
     projectType: '논문',
@@ -116,6 +124,7 @@ export const archiveItems = [
   {
     id: '09',
     name: 'Design Fiction as Critical Pedagogy',
+    publishedAt: '2026-10-12',
     question: '미래의 기술을 상상할 때, 왜 ‘저항하는 사람’까지 디자인해야 할까?',
     category: '디자인 픽션',
     projectType: '논문',
@@ -130,6 +139,7 @@ export const archiveItems = [
   {
     id: '10',
     name: 'Prefab Paradise',
+    publishedAt: '2026-10-12',
     question: '우리가 상상하는 ‘자연’도 사실 디자인된 이미지 아닐까?',
     category: '스페큘러티브 디자인',
     projectType: '설치·전시',
@@ -144,6 +154,7 @@ export const archiveItems = [
   {
     id: '11',
     name: 'Anthos — With You, For Life',
+    publishedAt: '2026-10-12',
     question: '부모 역할도 ‘서비스’가 될 수 있을까?',
     category: '디자인 픽션',
     projectType: '프로젝트',
@@ -158,6 +169,7 @@ export const archiveItems = [
   {
     id: '12',
     name: 'Opening the Underground',
+    publishedAt: '2026-10-12',
     question: '우리가 도시의 ‘지하’를 자원으로만 상상하고 있다면?',
     category: '디자인 픽션',
     projectType: '연구',
@@ -172,6 +184,7 @@ export const archiveItems = [
   {
     id: '13',
     name: 'The Boundaries of Visibility',
+    publishedAt: '2026-10-12',
     question: 'AI의 눈을 피하는 옷을 만든다면?',
     category: '크리티컬 디자인',
     projectType: '설치·전시',
@@ -186,6 +199,7 @@ export const archiveItems = [
   {
     id: '14',
     name: 'Echoes of Drought',
+    publishedAt: '2026-10-12',
     question: '기후 데이터를 ‘그래프’가 아니라 ‘미래 세계’로 바꾸면?',
     category: '스페큘러티브 디자인',
     projectType: '설치·전시',
@@ -200,6 +214,7 @@ export const archiveItems = [
   {
     id: '15',
     name: 'Afterlife Delegation Protocol',
+    publishedAt: '2026-10-12',
     question: '내가 죽은 뒤에도 ‘내 AI’가 계속 행동한다면?',
     category: '디자인 픽션',
     projectType: '설치·전시',
@@ -215,6 +230,7 @@ export const archiveItems = [
   {
     id: '16',
     name: 'Once Upon A Garden',
+    publishedAt: '2026-10-12',
     question: 'AI가 기억을 복원한다면, 그건 ‘기억’일까?',
     category: '크리티컬 디자인',
     projectType: '설치·전시',
@@ -229,6 +245,7 @@ export const archiveItems = [
   {
     id: '17',
     name: 'Robotic Meditation',
+    publishedAt: '2026-10-12',
     question: '기계도 ‘숭배’할 수 있을까?',
     category: '실험적 디자인',
     projectType: '설치·전시',
@@ -243,6 +260,7 @@ export const archiveItems = [
   {
     id: '18',
     name: 'MARS! Mobilizing Awareness for Resilient Societies!',
+    publishedAt: '2026-10-12',
     question: '화성에서 민주주의를 처음 설계한다면?',
     category: '스페큘러티브 디자인',
     projectType: '설치·전시',
@@ -257,6 +275,7 @@ export const archiveItems = [
   {
     id: '19',
     name: 'Soft Crash',
+    publishedAt: '2026-10-12',
     question: '약탈된 유물을 돌려주는 미래는 어떤 모습일까?',
     category: '디자인 픽션',
     projectType: '설치·전시',
@@ -271,6 +290,7 @@ export const archiveItems = [
   {
     id: '20',
     name: 'IRIDIA',
+    publishedAt: '2026-10-12',
     question: '아직 도착하지 않은 소행성의 주인은 누구일까?',
     category: '크리티컬 디자인',
     projectType: '설치·전시',
@@ -285,6 +305,7 @@ export const archiveItems = [
   {
     id: '21',
     name: 'Superfund Radio Greenhouse',
+    publishedAt: '2026-10-12',
     question: '오염된 땅의 기억을 재료로 만들 수 있을까?',
     category: '실험적 디자인',
     projectType: '설치·전시',
@@ -299,6 +320,7 @@ export const archiveItems = [
   {
     id: '22',
     name: 'A Satellite in My Body',
+    publishedAt: '2026-10-12',
     question: '우리 머리 위를 지나가는 위성을 몸으로 느낄 수 있다면?',
     category: '스페큘러티브 디자인',
     projectType: '설치·전시',
@@ -313,6 +335,7 @@ export const archiveItems = [
   {
     id: '23',
     name: 'KojiGotchi – A Tamagotchi for the Microbial Age',
+    publishedAt: '2026-10-12',
     question: '곰팡이를 반려동물처럼 돌보는 미래가 온다면?',
     category: '스페큘러티브 디자인',
     projectType: '설치·전시',
@@ -327,6 +350,7 @@ export const archiveItems = [
   {
     id: '24',
     name: 'transparent.citizen',
+    publishedAt: '2026-10-12',
     question: '숨길 게 없다면, AI가 내 일상을 모두 기록해도 괜찮을까?',
     category: '크리티컬 디자인',
     projectType: '설치·전시',
@@ -341,6 +365,7 @@ export const archiveItems = [
   {
     id: '25',
     name: 'Written in Decay: Traces of Entanglement',
+    publishedAt: '2026-10-12',
     question: '책을 끝까지 쓰는 사람이 인간이 아니라 미생물이라면?',
     category: '실험적 디자인',
     projectType: '설치·전시',

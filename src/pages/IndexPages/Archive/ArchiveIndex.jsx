@@ -409,9 +409,13 @@ export default function ArchiveIndex({
 
                   <div className={styles.cardBody}>
                     <p className={styles.category}>
-                      {item.category}
-                      {item.category && item.projectType && ' · '}
-                      {item.projectType}
+                      {[
+                        item.publishedAt?.slice(0, 4),
+                        item.category,
+                        item.projectType,
+                      ]
+                        .filter(Boolean)
+                        .join(' · ')}
                     </p>
                     <h3 id={`${id}-card-${item.id}`}>
                       {item.question}
