@@ -12,6 +12,7 @@ import ToolkitLab from './pages/IndexPages/10MinToolkit/ToolkitLab.jsx'
 import ArchiveIndex from './pages/IndexPages/Archive/ArchiveIndex.jsx';
 import NewsletterIndex from './pages/IndexPages/Newsletter/NewsletterIndex.jsx';
 import KombuchaProject from './pages/ProjectPages/KombuchaProject.jsx';
+import ToolkitWorkspace from './pages/ExperimentPages/ToolkitWorkspace.jsx';
 
 export default function App() {
   const path = window.location.pathname.replace(/\/+$/, '') || '/';
@@ -86,6 +87,24 @@ export default function App() {
         <Header />
         <main>
           <ToolkitLab />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  if (path.startsWith('/10-min-toolkit/')) {
+    const toolkitId = path.split('/')[2];
+
+    return (
+      <>
+        <Header />
+        <main>
+          <ToolkitWorkspace
+            key={toolkitId}
+            toolkitId={toolkitId}
+            backHref="/10-min-toolkit"
+          />
         </main>
         <Footer />
       </>

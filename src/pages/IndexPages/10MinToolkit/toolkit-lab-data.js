@@ -1,50 +1,186 @@
 export const labToolkits = [
   {
-    id: 'handover', number: '01', category: 'Question', color: 'pink', mark: '↗',
+    id: 'exp-001',
+    number: '01',
+    category: 'Question',
+    color: 'pink',
+    mark: '↗',
+
     title: '결정권을\n넘겨주는 실험',
-    description: '내가 설계한 서비스의 결정권 하나를 인간 밖으로 옮겨봅니다.',
-    question: '사용자가 모든 것을 통제하지 않아도 좋은 경험이 될까?',
-    outcome: '비인간의 리듬을 반영한 서비스 규칙 3개',
-    steps: ['자주 쓰는 서비스에서 사용자가 결정하는 행동 하나를 적으세요.', '그 결정권을 날씨·동물·시간 중 하나에 맡기면 어떻게 달라질지 상상하세요.', '새로운 규칙 3개를 쓰고, 가장 해보고 싶은 규칙 하나에 표시하세요.'],
+    description:
+      '내가 설계한 서비스의 결정권 하나를 인간 밖으로 옮겨봅니다.',
+    question:
+      '사용자가 모든 것을 통제하지 않아도 좋은 경험이 될까?',
+    outcome:
+      '비인간의 리듬을 반영한 서비스 규칙 3개',
+
+    durationMinutes: 10,
+    materials: ['종이와 펜 또는 웹 입력'],
+    pdfUrl: '',
+    relatedArchiveIds: [],
+
+    steps: [
+      {
+        id: 'find',
+        title: '결정권 찾기',
+        description:
+          '자주 쓰는 서비스에서 사용자가 결정하는 행동을 찾아보세요.',
+        durationMinutes: 2,
+
+        questions: [
+          {
+            id: 'service',
+            label: '내가 고른 서비스',
+            type: 'text',
+            placeholder: '예: 음악 추천 앱',
+            required: true,
+          },
+          {
+            id: 'decision',
+            label: '원래 사용자가 결정하던 것',
+            type: 'textarea',
+            placeholder: '예: 오늘 들을 음악의 분위기를 내가 고른다.',
+            required: true,
+          },
+        ],
+      },
+
+      {
+        id: 'shift',
+        title: '인간 밖으로 옮기기',
+        description:
+          '그 결정권을 다른 존재나 환경에 맡겨보세요.',
+        durationMinutes: 3,
+
+        questions: [
+          {
+            id: 'delegate',
+            label: '누구 또는 무엇에게 맡길까요?',
+            type: 'singleSelect',
+            options: ['날씨', '동물', '시간', '식물'],
+            allowCustom: true,
+            required: true,
+          },
+        ],
+      },
+
+      {
+        id: 'make',
+        title: '새로운 규칙 만들기',
+        description:
+          '결정권을 옮겼을 때 생기는 새로운 규칙을 만들어보세요.',
+        durationMinutes: 5,
+
+        questions: [
+          {
+            id: 'rules',
+            label: '새로운 서비스 규칙 3개',
+            type: 'list',
+            itemCount: 3,
+            placeholder: '새로운 규칙을 적어주세요.',
+            required: true,
+          },
+          {
+            id: 'next',
+            label: '다음으로 이어지는 질문',
+            type: 'textarea',
+            placeholder: '무엇을 더 확인해보고 싶나요?',
+            required: false,
+          },
+        ],
+      },
+    ],
   },
-  {
-    id: 'disappear', number: '02', category: 'Imagine', color: 'green', mark: '◌',
-    title: '사라짐을\n설계하는 실험',
-    description: '물건의 탄생 대신, 쓰임이 끝난 이후의 장면을 상상합니다.',
-    question: '영원히 남는 것 대신 잘 사라지는 것을 설계한다면?',
-    outcome: '물건의 마지막 장면을 담은 짧은 시나리오',
-    steps: ['주변 물건 하나를 골라 쓰임이 끝나는 순간을 적으세요.', '수리·분해·다른 쓰임으로 전환되는 세 가지 마지막 장면을 상상하세요.', '가장 마음에 드는 장면을 그리거나 다섯 문장으로 쓰세요.'],
-  },
-  {
-    id: 'slow', number: '03', category: 'Make', color: 'yellow', mark: '≈',
-    title: '기다림을\n만드는 실험',
-    description: '즉시 끝나는 기능 하나를 천천히 작동하는 경험으로 바꿔봅니다.',
-    question: '빠를수록 좋다는 규칙을 잠시 내려놓는다면?',
-    outcome: '기다리는 시간이 의미 있는 인터페이스 스케치',
-    steps: ['즉시 실행되는 기능 하나를 고르세요.', '그 기능이 하루에 한 번만 열리거나 서서히 완성된다면 어떤 의미가 생길지 적으세요.', '기다리는 동안 사용자가 볼 화면을 간단하게 그려보세요.'],
-  },
-  {
-    id: 'voice', number: '04', category: 'Question', color: 'blue', mark: '“ ”',
-    title: '물건에게\n발언권 주기',
-    description: '책상 위 물건 하나의 입장에서 지금의 공간을 다시 봅니다.',
-    question: '이 물건이 회의에 참석한다면 무엇을 요구할까?',
-    outcome: '물건의 관점으로 쓴 요구사항 3개',
-    steps: ['주변 물건 하나를 고르고 사용되는 장면을 관찰하세요.', '그 물건이 불편해할 상황과 바랄 만한 변화를 상상하세요.', '그 물건의 말투로 요구사항 세 가지를 적으세요.'],
-  },
-  {
-    id: 'future', number: '05', category: 'Imagine', color: 'peach', mark: '✳',
-    title: '미래의 평범함을\n수집하기',
-    description: '10년 뒤의 일상에서 너무 평범해 아무도 설명하지 않는 물건을 만듭니다.',
-    question: '미래 사람에게는 당연하지만 우리에게는 낯선 것은?',
-    outcome: '미래의 생활용품 하나와 사용 설명 한 줄',
-    steps: ['10년 뒤 달라질 일상의 조건 하나를 정하세요.', '그 조건에서 매일 쓰게 될 평범한 물건을 상상하세요.', '물건을 스케치하고 이름과 사용 설명 한 줄을 붙이세요.'],
-  },
-  {
-    id: 'rule', number: '06', category: 'Make', color: 'cream', mark: '↔',
-    title: '당연한 규칙\n하나 뒤집기',
-    description: '익숙한 서비스의 규칙을 뒤집어 작은 대안을 그려봅니다.',
-    question: '이 규칙이 정반대라면 무엇이 가능해질까?',
-    outcome: '규칙 하나를 뒤집은 서비스 장면 스케치',
-    steps: ['자주 쓰는 서비스의 당연한 규칙 하나를 적으세요.', '그 규칙을 정반대로 바꾸고 생기는 장점과 불편을 적으세요.', '새로운 규칙이 잘 작동할 상황 하나를 스케치하세요.'],
+    {
+    id: 'exp-002',
+    number: '02',
+    category: 'Question',
+    color: 'pink',
+    mark: '↗',
+
+    title: '결정권을\n넘겨주는 실험',
+    description:
+      '내가 설계한 서비스의 결정권 하나를 인간 밖으로 옮겨봅니다.',
+    question:
+      '사용자가 모든 것을 통제하지 않아도 좋은 경험이 될까?',
+    outcome:
+      '비인간의 리듬을 반영한 서비스 규칙 3개',
+
+    durationMinutes: 10,
+    materials: ['종이와 펜 또는 웹 입력'],
+    pdfUrl: '',
+    relatedArchiveIds: [],
+
+    steps: [
+      {
+        id: 'find',
+        title: '결정권 찾기',
+        description:
+          '자주 쓰는 서비스에서 사용자가 결정하는 행동을 찾아보세요.',
+        durationMinutes: 2,
+
+        questions: [
+          {
+            id: 'service',
+            label: '내가 고른 서비스',
+            type: 'text',
+            placeholder: '예: 음악 추천 앱',
+            required: true,
+          },
+          {
+            id: 'decision',
+            label: '원래 사용자가 결정하던 것',
+            type: 'textarea',
+            placeholder: '예: 오늘 들을 음악의 분위기를 내가 고른다.',
+            required: true,
+          },
+        ],
+      },
+
+      {
+        id: 'shift',
+        title: '인간 밖으로 옮기기',
+        description:
+          '그 결정권을 다른 존재나 환경에 맡겨보세요.',
+        durationMinutes: 3,
+
+        questions: [
+          {
+            id: 'delegate',
+            label: '누구 또는 무엇에게 맡길까요?',
+            type: 'singleSelect',
+            options: ['날씨', '동물', '시간', '식물'],
+            allowCustom: true,
+            required: true,
+          },
+        ],
+      },
+
+      {
+        id: 'make',
+        title: '새로운 규칙 만들기',
+        description:
+          '결정권을 옮겼을 때 생기는 새로운 규칙을 만들어보세요.',
+        durationMinutes: 5,
+
+        questions: [
+          {
+            id: 'rules',
+            label: '새로운 서비스 규칙 3개',
+            type: 'list',
+            itemCount: 3,
+            placeholder: '새로운 규칙을 적어주세요.',
+            required: true,
+          },
+          {
+            id: 'next',
+            label: '다음으로 이어지는 질문',
+            type: 'textarea',
+            placeholder: '무엇을 더 확인해보고 싶나요?',
+            required: false,
+          },
+        ],
+      },
+    ],
   },
 ];

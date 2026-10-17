@@ -21,9 +21,9 @@ export default function ToolkitLab({ products = labToolkits }) {
   }, [selected]);
 
   function openToolkit(item) {
-    setStarted(false);
-    setNotice('');
-    setSelected(item);
+    window.location.assign(
+      `/10-min-toolkit/${encodeURIComponent(item.id)}`
+    );
   }
 
   function pickOne() {
@@ -64,7 +64,7 @@ export default function ToolkitLab({ products = labToolkits }) {
           {visible.length === 0 && <p className={styles.empty}>새로운 실험을 준비 중입니다.</p>}
         </section>
 
-        <footer className={styles.footer}><p><span aria-hidden="true">↳</span> 작은 실험도 하나의 시작이 됩니다.</p></footer>
+        {/* <footer className={styles.footer}><p>작은 실험도 하나의 시작이 됩니다.</p></footer> */}
       </div>
 
       <dialog ref={dialogRef} className={styles.dialog} onCancel={() => setSelected(null)} onClose={() => setSelected(null)} aria-labelledby={`${id}-dialog-title`}>
@@ -75,7 +75,15 @@ export default function ToolkitLab({ products = labToolkits }) {
           <div className={`${styles.startQuestion} ${styles[selected.color] || styles.cream}`}><span>START WITH A QUESTION</span><p>{selected.question}</p></div>
           <dl className={styles.facts}><div><dt>준비물</dt><dd>종이와 펜 또는 아래 기록란</dd></div><div><dt>해보고 남는 것</dt><dd>{selected.outcome}</dd></div></dl>
           {!started ? <button className={styles.startButton} type="button" onClick={() => setStarted(true)}>10분 실험 시작하기 <span aria-hidden="true">↗</span></button> : <div className={styles.practice}>
-            <h3>10분 동안, 이렇게 해보세요.</h3><ol>{selected.steps.map((step, index) => <li key={step}><span>{['2 MIN', '3 MIN', '5 MIN'][index]}</span><p>{step}</p></li>)}</ol>
+            <h3>10분 동안, 이렇게 해보세요.</h3>
+            <ol>
+              {selected.steps.map(step => (
+                <li key={step.id}>
+                  <span>{step.durationMinutes} MIN</span>
+                  <p>{step.description}</p>
+                </li>
+              ))}
+            </ol>
             <label htmlFor={`${id}-note`}>생각의 흔적을 남겨보세요.</label><textarea id={`${id}-note`} value={notes[selected.id] || ''} onChange={event => setNotes(current => ({ ...current, [selected.id]: event.target.value }))} placeholder="거친 메모도 좋아요. 새로운 규칙, 장면, 다음 질문을 적어보세요." rows={5} />
             <button className={styles.startButton} type="button" onClick={downloadNote}>내 실험 기록 저장 <span aria-hidden="true">↓</span></button><p className={styles.fileNote}>텍스트 파일(.txt)로 내려받습니다.</p><p className={styles.savedNotice} role="status">{notice}</p>
           </div>}
