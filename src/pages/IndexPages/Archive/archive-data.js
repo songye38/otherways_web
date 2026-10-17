@@ -6,36 +6,42 @@ export const archiveItems = [
     name: 'Wanderer',
     question: '사용자가 마음대로 조작할 수 없는 앱이라면?',
     category: '실험적 디자인',
-    projectType: '설치·전시',
+    projectType: '논문',
     tags: ['생태 인터랙션', '동물의 리듬', '날씨', '비인간 중심 디자인', '사용자 통제', '느린 기술'],
     image: './archive/01.jpg',
     imageAlt: '동물과 날씨의 리듬에 따라 달라지는 Wanderer 프로젝트의 인터페이스 또는 설치 장면',
     imageCredit: '',
     sourceUrl: 'https://journals.sagepub.com/doi/abs/10.1177/19467567261438429?utm_source=chatgpt.com',
+    newsletterUrl: 'https://makeways.stibee.com/p/3',
+    isOtherWays: false
   },
   {
     id: '02',
     name: 'TOUT EST CHAOS',
     question: '디자인은 꼭 문제를 해결해야 할까?',
     category: '크리티컬 디자인',
-    projectType: '설치·전시',
+    projectType: '디자인위크',
     tags: ['문제 해결 비판', '디자인의 역할', '혼돈', '효율성 비판', '전시', '미완결성'],
     image: '',
     imageAlt: 'TOUT EST CHAOS 전시 공간과 실험적 디자인 작품',
-    imageCredit: '',
-    sourceUrl: '',
+    image: './archive/02.jpg',
+    sourceUrl: 'https://www.designboom.com/design/pli-office-tout-est-chaos-at-la-gaite-lyrique-for-paris-design-week-2026/',
+    newsletterUrl: 'https://makeways.stibee.com/p/3',
+    isOtherWays: false
   },
   {
     id: '03',
     name: 'The Pluriversity',
     question: '대학이 ‘취업을 준비하는 곳’이 아니라 ‘지역을 회복시키는 곳’이라면?',
     category: '스페큘러티브 디자인',
-    projectType: '설치·전시',
+    projectType: '프로젝트',
     tags: ['미래 교육', '2070년 시나리오', '지역 공동체', '대학의 미래', '대안적 학습', '사회 시스템'],
-    image: '',
+    image: './archive/03.jpg',
     imageAlt: '지역과 학습이 연결되는 미래 교육기관 The Pluriversity의 시나리오 시각 자료',
     imageCredit: '',
-    sourceUrl: 'https://ddw.nl/index.php/en/programme/the-pluriversity-1?utm_source=chatgpt.com',
+    sourceUrl: 'https://thepluriversitylahore.com/',
+    newsletterUrl: 'https://makeways.stibee.com/p/3',
+    isOtherWays: false
   },
   {
     id: '04',
@@ -48,6 +54,8 @@ export const archiveItems = [
     imageAlt: 'SLIPSTREAM 전시의 설치 작품 또는 미래와 시간성을 다루는 전시 장면',
     imageCredit: '',
     sourceUrl: 'https://www.arebyte.com/slipstream?utm_source=chatgpt.com',
+    newsletterUrl: '',
+    isOtherWays: false
   },
   {
     id: '05',
@@ -56,10 +64,12 @@ export const archiveItems = [
     category: '실험적 디자인',
     projectType: '설치·전시',
     tags: ['수중 생명', '감각 번역', '비인간 중심 디자인', '생태 감수성', '인간과 자연', '다종 관계'],
-    image: '',
+    image: './archive/05.jpg',
     imageAlt: '수중 생명체의 감각과 인간의 경험을 연결하는 Amphibious Humanity 프로젝트',
     imageCredit: '',
     sourceUrl: '',
+    newsletterUrl: '',
+    isOtherWays: false
   },
   {
     id: '06',
@@ -72,6 +82,8 @@ export const archiveItems = [
     imageAlt: '환경 복구 로봇의 허구적 설정을 표현한 The Aboriginal Robot 프로젝트 이미지',
     imageCredit: '',
     sourceUrl: 'https://www.roslynoxley9.com.au/exhibition/the-aboriginal-robot/xthb4?utm_source=chatgpt.com',
+    newsletterUrl: 'https://makeways.stibee.com/p/2',
+    isOtherWays: false
   },
   {
     id: '07',
@@ -84,30 +96,36 @@ export const archiveItems = [
     imageAlt: '점토 작업과 센서, 가상 환경이 연결된 Probably A Dog 실험 장면',
     imageCredit: '',
     sourceUrl: 'https://head.hesge.ch/en/event/2026/probably-dog?utm_source=chatgpt.com',
+    newsletterUrl: '',
+    isOtherWays: false
   },
   {
     id: '08',
     name: 'Co-Creating Educational Futures',
     question: 'AI에게 미래를 물었더니 왜 자꾸 비슷한 미래가 나올까?',
     category: '디자인 리서치',
-    projectType: '설치·전시',
+    projectType: '논문',
     tags: ['생성형 AI', '프롬프트', '미래 교육', '디자인 픽션', '공동 창작', '교육 연구'],
-    image: '',
+    image: './archive/08.jpg',
     imageAlt: '생성형 AI 프롬프트를 이용한 미래 교육 시나리오와 공동 창작 과정',
     imageCredit: '',
     sourceUrl: 'https://dl.acm.org/doi/10.1145/3800645.3812953?utm_source=chatgpt.com',
+    newsletterUrl: '',
+    isOtherWays: false
   },
   {
     id: '09',
     name: 'Design Fiction as Critical Pedagogy',
     question: '미래의 기술을 상상할 때, 왜 ‘저항하는 사람’까지 디자인해야 할까?',
     category: '디자인 픽션',
-    projectType: '설치·전시',
+    projectType: '논문',
     tags: ['비판적 교육학', '감시 기술', '사용자 저항', '권력 관계', '사회적 목적', '기술 비판'],
     image: './archive/09.jpg',
     imageAlt: '감시 기술과 저항하는 사용자를 상상하는 디자인 픽션 연구 자료',
     imageCredit: '',
     sourceUrl: 'https://doi.org/10.3389/feduc.2026.1692366?utm_source=chatgpt.com',
+    newsletterUrl: 'https://makeways.stibee.com/p/1',
+    isOtherWays: false
   },
   {
     id: '10',
@@ -120,30 +138,36 @@ export const archiveItems = [
     imageAlt: '인공적으로 조성된 이상적 자연이나 서식지를 표현한 Prefab Paradise 작품',
     imageCredit: '',
     sourceUrl: 'https://turf-projects.com/project/prefab-paradise/?utm_source=chatgpt.com',
+    newsletterUrl: 'https://makeways.stibee.com/p/2',
+    isOtherWays: false
   },
   {
     id: '11',
     name: 'Anthos — With You, For Life',
     question: '부모 역할도 ‘서비스’가 될 수 있을까?',
     category: '디자인 픽션',
-    projectType: '설치·전시',
+    projectType: '프로젝트',
     tags: ['인공지능', '유전자 조작', '반려동물', '돌봄', '생명윤리', '미래의 양육'],
     image: './archive/11.jpg',
     imageAlt: '유전자 조작 반려동물과 AI 양육 시스템을 상상한 Anthos 프로젝트 이미지',
     imageCredit: '',
     sourceUrl: 'https://www.behance.net/gallery/256099527/Anthos-With-You-For-Life?utm_source=chatgpt.com',
+    newsletterUrl: '',
+    isOtherWays: false
   },
   {
     id: '12',
     name: 'Opening the Underground',
     question: '우리가 도시의 ‘지하’를 자원으로만 상상하고 있다면?',
     category: '디자인 픽션',
-    projectType: '설치·전시',
+    projectType: '연구',
     tags: ['도시의 미래', '지하 공간', '파리', '참여형 워크숍', '도시 인프라', '대안적 시나리오'],
-    image: '',
+    image: './archive/12.jpg',
     imageAlt: '파리의 지하 공간을 새로운 관점으로 탐색하는 디자인 픽션 워크숍 자료',
     imageCredit: '',
     sourceUrl: 'https://www.brgm.fr/en/scientific-programme/subsurface-common-good-research-programme-responsible-sustainable-use?utm_source=chatgpt.com',
+    newsletterUrl: 'https://makeways.stibee.com/p/1',
+    isOtherWays: false
   },
   {
     id: '13',
@@ -156,6 +180,8 @@ export const archiveItems = [
     imageAlt: '기계 시각의 인식 경계를 시험하는 의복 또는 패턴의 모습',
     imageCredit: '',
     sourceUrl: 'https://www.metropolitan.hu/en/esemenyek/critical-utopia-possible-futures?utm_source=chatgpt.com',
+    newsletterUrl: '',
+    isOtherWays: false
   },
   {
     id: '14',
@@ -168,6 +194,8 @@ export const archiveItems = [
     imageAlt: '가뭄과 기후변화의 연쇄적인 미래를 표현한 Echoes of Drought 시각 자료',
     imageCredit: '',
     sourceUrl: 'https://www.wsl.ch/en/events-and-courses/ausstellung-echoes-of-drought/?utm_source=chatgpt.com',
+    newsletterUrl: 'https://makeways.stibee.com/p/2',
+    isOtherWays: false
   },
   {
     id: '15',
@@ -176,11 +204,14 @@ export const archiveItems = [
     category: '디자인 픽션',
     projectType: '설치·전시',
     tags: ['AI 에이전트', '디지털 사후세계', '권한 위임', '책임', '디지털 유산', '미래 거버넌스'],
-    image: '',
+    image: './archive/15.jpg',
     imageAlt: '인간 사후에도 작동하는 AI 에이전트의 권한과 책임을 상상한 디자인 픽션',
     imageCredit: '',
     sourceUrl: 'https://arxiv.org/abs/2608.15405?utm_source=chatgpt.com',
+    newsletterUrl: '',
+    isOtherWays: false
   },
+
   {
     id: '16',
     name: 'Once Upon A Garden',
@@ -192,6 +223,8 @@ export const archiveItems = [
     imageAlt: '누락된 식물 기록과 AI 생성 이미지를 함께 탐색하는 Once Upon A Garden 작품',
     imageCredit: '',
     sourceUrl: 'https://lindarebeiz.com/once-upon-a-garden?utm_source=chatgpt.com',
+    newsletterUrl: 'https://makeways.stibee.com/p/1',
+    isOtherWays: false
   },
   {
     id: '17',
@@ -204,6 +237,8 @@ export const archiveItems = [
     imageAlt: '태양의 움직임을 따라 천천히 움직이는 Robotic Meditation 로봇',
     imageCredit: '',
     sourceUrl: 'https://www.espronceda.net/speculative-futures-robotic-meditation/?utm_source=chatgpt.com',
+    newsletterUrl: '',
+    isOtherWays: false
   },
   {
     id: '18',
@@ -216,6 +251,8 @@ export const archiveItems = [
     imageAlt: '화성 정착 사회의 주거, 식량, 거버넌스를 함께 상상하는 MARS! 프로젝트',
     imageCredit: '',
     sourceUrl: 'https://zkm.de/en/2026/06/mars',
+    newsletterUrl: '',
+    isOtherWays: false
   },
   {
     id: '19',
@@ -228,6 +265,8 @@ export const archiveItems = [
     imageAlt: '약탈된 유물의 반환을 상상하는 Soft Crash 전시의 일러스트 또는 설치 작품',
     imageCredit: '',
     sourceUrl: 'https://www.tigerstrikesasteroid.com/phl/soft-crash/',
+    newsletterUrl: '',
+    isOtherWays: false
   },
   {
     id: '20',
@@ -240,6 +279,8 @@ export const archiveItems = [
     imageAlt: '소행성 16 Psyche를 대상으로 한 IRIDIA의 생성 이미지 또는 프로젝트 시각화',
     imageCredit: '',
     sourceUrl: 'https://iridia.world/',
+    newsletterUrl: 'https://makeways.stibee.com/p/4',
+    isOtherWays: false
   },
   {
     id: '21',
@@ -252,6 +293,8 @@ export const archiveItems = [
     imageAlt: '라디오와 바이오 소재, 재활용 직물을 활용한 Superfund Radio Greenhouse 전시',
     imageCredit: '',
     sourceUrl: 'https://www.collectivefutures.info/bwg/',
+    newsletterUrl: '',
+    isOtherWays: false
   },
   {
     id: '22',
@@ -264,6 +307,8 @@ export const archiveItems = [
     imageAlt: '위성 통과를 빛과 소리, 진동으로 전달하는 A Satellite in My Body 웨어러블 장치',
     imageCredit: '',
     sourceUrl: 'https://code.impakt.nl/projects/code-2026-a-satellite-in-my-body/',
+    newsletterUrl: 'https://makeways.stibee.com/p/4',
+    isOtherWays: false
   },
   {
     id: '23',
@@ -272,10 +317,12 @@ export const archiveItems = [
     category: '스페큘러티브 디자인',
     projectType: '설치·전시',
     tags: ['미생물', '바이오디자인', '돌봄', '웨어러블', '비인간 중심 디자인', '공생', '디지털 반려동물'],
-    image: '',
+    image: './archive/23.jpg',
     imageAlt: '투명한 배양실과 디지털 아바타 KojiMoji가 있는 KojiGotchi 웨어러블 프로토타입',
     imageCredit: '',
     sourceUrl: 'https://kojigotchi.maximvelli.com/',
+    newsletterUrl: 'https://makeways.stibee.com/p/4',
+    isOtherWays: false
   },
   {
     id: '24',
@@ -288,6 +335,8 @@ export const archiveItems = [
     imageAlt: 'AI가 개인의 일상을 관찰하고 전기를 실시간 출력하는 transparent.citizen 설치',
     imageCredit: '',
     sourceUrl: 'https://ddw.nl/en/programme/transparentcitizen-1',
+    newsletterUrl: '',
+    isOtherWays: false
   },
   {
     id: '25',
@@ -296,9 +345,11 @@ export const archiveItems = [
     category: '실험적 디자인',
     projectType: '설치·전시',
     tags: ['바이오플라스틱', '미생물', '생분해', '비인간 중심 디자인', '시간성', '공동 창작', '재료의 변화'],
-    image: './archive/15.jpg',
+    image: './archive/25.jpg',
     imageAlt: '미생물과 토양에 의해 분해 흔적이 남은 바이오플라스틱 책의 페이지',
     imageCredit: '',
     sourceUrl: 'https://ddw.nl/en/programme/written-in-decay-traces-of-entanglement-1',
+    newsletterUrl: '',
+    isOtherWays: false
   },
 ];

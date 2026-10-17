@@ -402,7 +402,7 @@
 .cardFooter a {
     display: inline-flex;
     align-items: center;
-    gap: 24px;
+    gap: 4px;
     font-size: 15px;
     text-decoration: none;
     padding: 6px 0;
@@ -642,6 +642,24 @@
     border: 0;
 }
 
+
+.cardFooter {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 20px;
+}
+
+.cardFooter a {
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.cardFooter a.newsletterLink {
+  color: #a62775;
+}
+
 @media (max-width: 760px) {
     .textView .cardBody {
         grid-template-columns: minmax(0, 1fr);
@@ -743,3 +761,4 @@
         font-size: 24px;
     }
 }
+
