@@ -52,3 +52,93 @@
   .bottom { align-items: flex-start; }
   .business { flex-direction: column; }
 }
+
+@media (max-width: 600px) {
+  .footer {
+    padding: 28px 20px 20px;
+  }
+
+  .main {
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 24px;
+  }
+
+  .brand {
+    max-width: 100%;
+  }
+
+  .brandName {
+    margin-bottom: 10px;
+    font-size: 26px;
+  }
+
+  .logo {
+    width: 132px;
+    margin-bottom: 12px;
+  }
+
+  .description {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  /* 연락처를 가로로 배치 */
+  .contact {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px 18px;
+    max-width: 100%;
+  }
+
+  .contactLabel {
+    flex-basis: 100%;
+    margin: 0;
+    font-size: 12px;
+  }
+
+  .contact a {
+    min-width: 0;
+    max-width: 100%;
+    padding: 4px 0;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  /* 사업자 정보를 가로로 묶고 자동 줄바꿈 */
+  .business {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4px 16px;
+    padding-bottom: 18px;
+    font-size: 12px;
+    line-height: 1.6;
+  }
+
+  .business div {
+    min-width: 0;
+    max-width: 100%;
+    gap: 0 6px;
+  }
+
+  .business dd {
+    min-width: 0;
+  }
+
+  .bottom {
+    align-items: center;
+    gap: 8px 16px;
+    padding-top: 16px;
+  }
+
+  .bottom p,
+  .bottom a {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  .bottom a {
+    padding: 6px 0;
+  }
+}
