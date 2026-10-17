@@ -8,6 +8,7 @@ import Footer from './components/landingpage/Footer.jsx';
 import Header from './components/common/Header.jsx';
 import ToolkitIndex from './pages/IndexPages/Toolkit/ToolkitIndex.jsx';
 import ProjectIndex from './pages/IndexPages/Project/ProjectIndex.jsx';
+import ToolkitLab from './pages/IndexPages/10MinToolkit/ToolkitLab.jsx'
 import ArchiveIndex from './pages/IndexPages/Archive/ArchiveIndex.jsx';
 import NewsletterIndex from './pages/IndexPages/Newsletter/NewsletterIndex.jsx';
 import KombuchaProject from './pages/ProjectPages/KombuchaProject.jsx';
@@ -15,7 +16,7 @@ import KombuchaProject from './pages/ProjectPages/KombuchaProject.jsx';
 export default function App() {
   const path = window.location.pathname.replace(/\/+$/, '') || '/';
 
-    // 콤부차 상세 페이지
+  // 콤부차 상세 페이지
   if (path === '/project/kombucha') {
     return (
       <>
@@ -31,7 +32,7 @@ export default function App() {
     );
   }
 
-    if (path === '/toolkit') {
+  if (path === '/toolkit') {
     return (
       <>
         <Header />
@@ -68,12 +69,23 @@ export default function App() {
     );
   }
 
-    if (path === '/archive') {
+  if (path === '/archive') {
     return (
       <>
         <Header />
         <main>
           <ArchiveIndex />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+  if (path === '/10-min-toolkit') {
+    return (
+      <>
+        <Header />
+        <main>
+          <ToolkitLab />
         </main>
         <Footer />
       </>

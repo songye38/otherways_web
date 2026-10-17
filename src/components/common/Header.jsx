@@ -121,6 +121,9 @@ export default function Header() {
         <a href="/archive" onClick={() => setMenuOpen(false)}>
           Archive
         </a>
+        <a href="/10-min-toolkit" onClick={() => setMenuOpen(false)}>
+          10-Min Toolkit
+        </a>
       </nav>
     </header>
   );
