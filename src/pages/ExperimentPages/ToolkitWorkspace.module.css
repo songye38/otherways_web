@@ -40,7 +40,7 @@
 .stepsNav button:disabled { opacity:.6; cursor:default; }
 .leaveWith { border-top:1px solid #d6d1c5; padding-top:20px; }
 .leaveWith > span { font-size:10px; color:#918c80; }
-.leaveWith p { font-size:13px; line-height:1.8; margin:10px 0 0; }
+.leaveWith p { font-size:18px; line-height:1.5; margin:10px 0 0; }
 .sampleButton { border:0; border-bottom:1px solid #c7b1be; background:none; color:#a32972; font-size:11px; padding:10px 0; margin-top:24px; text-align:left; }
 .workspace { min-width:0; }
 .questionCard { position:relative; padding:28px 32px; background:#f0bfd4; border:1px solid #ddacc1; border-radius:3px; overflow:hidden; }

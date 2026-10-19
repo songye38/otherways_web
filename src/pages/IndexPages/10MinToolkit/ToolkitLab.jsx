@@ -55,7 +55,8 @@ export default function ToolkitLab({ products = labToolkits }) {
           <div className={styles.benchTop}><h2 id={`${id}-title`}>THE EXPERIMENT DESK <span>{String(products.length).padStart(2, '0')}</span></h2></div>
           <div className={styles.filters} role="group" aria-label="실험 선택">{categories.map(value => <button type="button" key={value} aria-pressed={category === value} className={category === value ? styles.active : ''} onClick={() => setCategory(value)}>{value === 'All' ? '모든 실험' : value}<span>{value === 'All' ? products.length : products.filter(item => item.category === value).length}</span></button>)}</div>
           <p className={styles.srOnly} role="status" aria-live="polite">실험 {visible.length}개</p>
-          <div className={styles.sheets}>{visible.map(item => <button type="button" key={item.id} className={`${styles.sheet} ${styles[item.color] || styles.cream}`} onClick={() => openToolkit(item)} aria-label={`${item.title.replaceAll('\n', ' ')} — 실험 살펴보기`}>
+          <div className={styles.sheets}>{visible.map(item => <button type="button" key={item.id} className={styles.sheet}
+            style={{ backgroundColor: item.color || '#ece7d9' }} onClick={() => openToolkit(item)} aria-label={`${item.title.replaceAll('\n', ' ')} — 실험 살펴보기`}>
             <div className={styles.sheetTop}><span>EXPERIMENT / {item.number}</span><span>{item.category}</span></div>
             <div className={styles.sheetMark} aria-hidden="true">{item.mark}</div>
             <h3>{item.title}</h3><p className={styles.sheetDescription}>{item.description}</p>

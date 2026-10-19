@@ -278,7 +278,7 @@ function Workspace({ toolkit, backHref }) {
                 ))}
               </nav>
               {toolkit.outcome && <div className={styles.leaveWith}><span>오늘 남길 것</span><p>{toolkit.outcome}</p></div>}
-              {toolkit.materials?.length > 0 && <div className={styles.materials}><span>준비물</span><p>{toolkit.materials.join(' · ')}</p></div>}
+              {/* {toolkit.materials?.length > 0 && <div className={styles.materials}><span>준비물</span><p>{toolkit.materials.join(' · ')}</p></div>} */}
             </div>
           </aside>
 
