@@ -377,4 +377,75 @@ export const archiveItems = [
     newsletterUrl: '',
     isOtherWays: false
   },
+
+  {
+    id: '26',
+    name: "I'd prefer not to",
+    publishedAt: '2026-10-17',
+    question: 'AI가 대신 일해주는 줄 알았는데, 우리가 AI를 위해 일하고 있다면?',
+    category: '크리티컬 디자인',
+    projectType: '디자인위크',
+    tags: [
+      '인공지능',
+      '숨겨진 노동',
+      '디지털 노동',
+      '자동화 비판',
+      'CAPTCHA',
+      '인터페이스 비판',
+      '기술과 권력'
+    ],
+    image: './archive/26.jpg',
+    imageAlt: '여러 디스플레이와 전자장치, 산업용 선반으로 구성된 디지털 노동을 주제로 한 설치 작품',
+    imageCredit: '',
+    sourceUrl: 'https://ddw.nl/en/programme/id-prefer-not-to',
+    newsletterUrl: '',
+    isOtherWays: false
+  },
+  {
+    id: '27',
+    name: 'Blind Spots — A Speculative Care Infrastructure',
+    publishedAt: '2026-10-17',
+    question: '안전을 감시가 아닌 돌봄으로 설계한다면?',
+    category: '스페큘러티브 디자인',
+    projectType: '디자인위크',
+    tags: [
+      '돌봄',
+      '공공 공간',
+      '안전과 감시',
+      '참여형 디자인',
+      '사회적 포용',
+      '도시 인프라',
+      '다양한 사용자 경험'
+    ],
+    image: './archive/27.jpg',
+    imageAlt: 'CCTV와 그물망, 콘크리트 구조물 및 관람객의 참여 기록으로 구성된 공공 안전 설치 작품',
+    imageCredit: '',
+    sourceUrl: 'https://ddw.nl/en/programme/blind-spots-a-speculative-care-infrastructure',
+    newsletterUrl: '',
+    isOtherWays: false
+  },
+  {
+    id: '28',
+    name: 'Algodance',
+    publishedAt: '2026-10-17',
+    question: '온라인에서 말이 검열된다면, 춤이 새로운 언어가 될 수 있을까?',
+    category: '크리티컬 디자인',
+    projectType: '디자인위크',
+    tags: [
+      '알고리즘',
+      '플랫폼 검열',
+      '표현의 자유',
+      '대안적 소통',
+      '몸짓 언어',
+      '디지털 권리',
+      '기술과 권력'
+    ],
+    image: './archive/28.jpg',
+    imageAlt: '춤과 신체 움직임을 통해 알고리즘 감시와 새로운 의사소통 방식을 탐구하는 설치 작품',
+    imageCredit: '',
+    sourceUrl: 'https://ddw.nl/en/programme/algodance',
+    newsletterUrl: '',
+    isOtherWays: false
+  },
+
 ];

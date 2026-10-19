@@ -1,3 +1,6 @@
+import { lazy, Suspense } from 'react';
+
+
 import WhiteFlight from './components/WhiteFlight/WhiteFlight.jsx';
 import WhyWeDo from './components/landingpage/WhyWeDo.jsx';
 import WhatWeDo from './components/landingpage/WhatWeDo.jsx';
@@ -13,6 +16,7 @@ import ArchiveIndex from './pages/IndexPages/Archive/ArchiveIndex.jsx';
 import NewsletterIndex from './pages/IndexPages/Newsletter/NewsletterIndex.jsx';
 import KombuchaProject from './pages/ProjectPages/KombuchaProject.jsx';
 import ToolkitWorkspace from './pages/ExperimentPages/ToolkitWorkspace.jsx';
+import ToolkitEditor from './pages/AdminPages/ToolkitEditor.jsx';
 
 export default function App() {
   const path = window.location.pathname.replace(/\/+$/, '') || '/';
@@ -108,6 +112,18 @@ export default function App() {
         </main>
         <Footer />
       </>
+    );
+  }
+
+  if (path === '/admin/toolkits') {
+    if (!import.meta.env.DEV || !ToolkitEditor) {
+      return <p>페이지를 찾을 수 없습니다.</p>;
+    }
+
+    return (
+      <Suspense fallback={<p>편집기를 여는 중…</p>}>
+        <ToolkitEditor />
+      </Suspense>
     );
   }
 
