@@ -1,4 +1,5 @@
 export const labToolkits = [
+  // 실험1
   {
     id: 'exp-001',
     number: '01',
@@ -92,6 +93,7 @@ export const labToolkits = [
     ],
   },
 
+  // 실험2
   {
     id: 'exp-002',
     number: '02',
@@ -99,7 +101,7 @@ export const labToolkits = [
     color: '#A4B1E9',
     mark: '◌',
 
-    title: '빠져 있는\n질문 찾기',
+    title: '보이지 않는 것 찾기',
     description:
       '익숙한 서비스나 아이디어에서 저항하는 사람, 숨겨진 전제, 보이지 않는 빈칸을 찾아봅니다.',
     question:
@@ -220,6 +222,7 @@ export const labToolkits = [
     ],
   },
 
+  // 실험3
   {
     id: 'exp-003',
     number: '03',
@@ -227,7 +230,7 @@ export const labToolkits = [
     color: '#BFA2E7',
     mark: '⤴',
 
-    title: '미래를 한 걸음\n더 밀어보기',
+    title: '미래를 한번 더 밀어보기',
     description:
       '하나의 변화에서 출발해 파장을 추적하고, 익숙한 미래 이미지를 지우고, 해결책 뒤에 숨겨진 문제를 찾아봅니다.',
     question:
@@ -349,6 +352,7 @@ export const labToolkits = [
   },
 
 
+  // 실험4
   {
     id: 'exp-004',
     number: '04',
@@ -356,7 +360,7 @@ export const labToolkits = [
     color: '#A0CFB8',
     mark: '−',
 
-    title: '당연한 규칙\n하나 지우기',
+    title: '당연한 규칙 하나 지우기',
     description:
       '익숙한 서비스나 공간에서 당연하게 여겼던 규칙을 찾아 하나를 제거하고, 새로운 가능성을 상상해봅니다.',
     question:
@@ -457,6 +461,7 @@ export const labToolkits = [
   },
 
 
+  // 실험5
   {
     id: 'exp-005',
     number: '05',
@@ -464,7 +469,7 @@ export const labToolkits = [
     color: '#EABC7C',
     mark: '∞',
 
-    title: '물건과의 관계\n다시 상상하기',
+    title: '익숙한 것과 낯설게 관계 맺기',
     description:
       '익숙한 물건 하나를 돌봄, 감각, 가치의 관점에서 바라보고 새로운 관계의 규칙을 만들어봅니다.',
     question:
