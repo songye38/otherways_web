@@ -33,4 +33,20 @@ export const newsletterIssues = [
     experimentTitle: '익숙한 것과 낯설게 관계 맺기',
     toolkitUrl: 'https://www.otherways.kr/10-min-toolkit/exp-005',
   },
+      {
+    number: 5,
+    date: '2026-10-22',
+    title: '서울디자인위크에서 발견한 가능성',
+    newsletterUrl: 'https://makeways.stibee.com/p/5',
+    experimentTitle: '',
+    toolkitUrl: '',
+  },
+      {
+    number: 6,
+    date: '2026-10-29',
+    title: '기억을 입을 수 있다면?',
+    newsletterUrl: 'https://makeways.stibee.com/p/6',
+    experimentTitle: '',
+    toolkitUrl: '',
+  },
 ];
