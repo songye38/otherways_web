@@ -514,7 +514,7 @@ export const archiveItems = [
     imageAlt: 'The Affirmation Machine 설치 작품의 인터랙티브 장치와 관람객 참여 장면',
     imageCredit: '',
     sourceUrl: 'https://divad.info/#affirmation-machine',
-    newsletterUrl: '',
+    newsletterUrl: 'https://makeways.stibee.com/p/6',
     isOtherWays: false
   },
   {
@@ -629,7 +629,7 @@ export const archiveItems = [
     imageAlt: 'Tools for Collapse',
     imageCredit: '',
     sourceUrl: 'https://ddw.nl/en/programme/archive/2026/tools-for-collapse',
-    newsletterUrl: '',
+    newsletterUrl: 'https://makeways.stibee.com/p/6',
     isOtherWays: false
   },
   {
@@ -652,7 +652,7 @@ export const archiveItems = [
     imageAlt: 'Visual DNA: Woven memories of Incheon',
     imageCredit: '',
     sourceUrl: 'https://app-api.ddw.nl/en/programme/archive/2026/visual-dna-woven-memories-of-incheon-1',
-    newsletterUrl: '',
+    newsletterUrl: 'https://makeways.stibee.com/p/6',
     isOtherWays: false
   },
 
