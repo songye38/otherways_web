@@ -555,26 +555,22 @@ export default function ArchiveIndex({
                     </div>
 
                     <ul className={styles.cardTags}>
-                      {TAG_GROUPS.flatMap(({ key, label }) =>
-                        getTagValues(item, key).map(tag => {
-                          const selected = activeTags[key].includes(tag);
+                      {getTagValues(item, 'findings').map(tag => {
+                        const selected = activeTags.findings.includes(tag);
 
-                          return (
-                            <li key={`${key}-${tag}`}>
-                              <button
-                                type="button"
-                                title={label}
-                                aria-label={`${label}: ${tag}`}
-                                aria-pressed={selected}
-                                className={selected ? styles.selectedCardTag : ''}
-                                onClick={() => toggleTag(key, tag)}
-                              >
-                                #{tag}
-                              </button>
-                            </li>
-                          );
-                        })
-                      )}
+                        return (
+                          <li key={tag}>
+                            <button
+                              type="button"
+                              aria-pressed={selected}
+                              className={selected ? styles.selectedCardTag : ''}
+                              onClick={() => toggleTag('findings', tag)}
+                            >
+                              {tag}
+                            </button>
+                          </li>
+                        );
+                      })}
                     </ul>
 
                     <div className={styles.cardFooter}>
