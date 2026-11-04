@@ -859,7 +859,7 @@ export const archiveItems = [
     id: '40',
     name: 'The Smelling Brain',
     publishedAt: '2026-10-17',
-    question: '후각이 사라지는 미래에는 냄새를 기억하는 인공 장기가 필요할까?',
+    question: '우리가 냄새를 잃어버린다면, 그 냄새와 연결된 기억과 감정도 함께 사라질까?',
     category: '크리티컬 디자인',
     projectType: '디자인위크',
 
@@ -881,7 +881,7 @@ export const archiveItems = [
     id: '41',
     name: 'Soft Robotic Technological Probe for Speculative Fashion Futures',
     publishedAt: '2026-04-18',
-    question: '옷이 내 감정을 대신 표현한다면, 그것은 보호일까 감시일까?',
+    question: '옷이 나의 감정을 읽고 대신 표현한다면, 우리는 더 자유롭게 소통할 수 있을까?',
     category: '크리티컬 디자인',
     projectType: '논문',
 
@@ -925,7 +925,7 @@ export const archiveItems = [
     id: '43',
     name: 'Systemic Futures: Integrating Critical Speculation and Systemic Design Pragmatism',
     publishedAt: '2026-04-18',
-    question: '더 효율적인 미래가 우리가 원하는 미래와 다를 수 있을까?',
+    question: '지금 우리가 해결하려는 문제가 정말 미래에도 해결해야 할 문제일까?',
     category: '크리티컬 디자인',
     projectType: '논문',
 
