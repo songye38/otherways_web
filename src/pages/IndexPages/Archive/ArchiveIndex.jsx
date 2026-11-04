@@ -1,9 +1,43 @@
 import { useId, useState } from 'react';
 import { archiveItems } from './archive-data.js';
-import { externalUrl, filterArchive } from './archive-utils.js';
+import {
+  externalUrl,
+  filterArchive,
+  TAG_GROUPS,
+  getTagValues,
+} from './archive-utils.js';
 import styles from './ArchiveIndex.module.css';
 
 const PAGE_SIZE = 12;
+const TAG_PREVIEW_COUNT = 5; // 처음 보여줄 태그 개수
+
+const createEmptyTags = () => ({
+  topics: [],
+  methods: [],
+  perspectives: [],
+  findings: [],
+});
+
+// 원하는 대표 태그를 먼저 표시하는 설정.
+// 실제 사례 데이터에 있는 태그만 표시돼.
+const FEATURED_TAGS = {
+  topics: ['AI·기술', '생태·환경', '감각·신체', '기억·정체성', '사회·제도'],
+  methods: [
+    '재료 실험',
+    '참여형 워크숍',
+    '디자인 픽션',
+    '미래 시나리오',
+    '사변적 프로토타입',
+  ],
+  perspectives: [
+    '포스트휴머니즘',
+    '기술 비판',
+    '탈식민주의',
+    '돌봄 윤리',
+    '비인간 중심 디자인',
+  ],
+  findings: [],
+};
 
 function Thumbnail({ item }) {
   const [failedSrc, setFailedSrc] = useState(null);
@@ -41,7 +75,8 @@ export default function ArchiveIndex({
   const [query, setQuery] = useState('');
   const [category, setCategory] = useState('');
   const [projectType, setProjectType] = useState('');
-  const [tags, setTags] = useState([]);
+  const [tags, setTags] = useState(createEmptyTags);
+  const [expandedTags, setExpandedTags] = useState({});
   const [limit, setLimit] = useState(PAGE_SIZE);
   const [onlyOtherWays, setOnlyOtherWays] = useState(false);
   const [onlyNewsletter, setOnlyNewsletter] = useState(false);
@@ -55,9 +90,56 @@ export default function ArchiveIndex({
   const activeProjectType = projectTypes.includes(projectType)
     ? projectType
     : '';
-  const allTags = [...new Set(items.flatMap(item => item.tags || []))];
+
+
   const activeCategory = categories.includes(category) ? category : '';
-  const activeTags = tags.filter(tag => allTags.includes(tag));
+  const tagCounts = Object.fromEntries(
+    TAG_GROUPS.map(({ key }) => {
+      const counts = new Map();
+
+      items.forEach(item => {
+        const uniqueTags = new Set(getTagValues(item, key));
+
+        uniqueTags.forEach(tag => {
+          counts.set(tag, (counts.get(tag) || 0) + 1);
+        });
+      });
+
+      return [key, counts];
+    })
+  );
+
+  const availableTags = Object.fromEntries(
+    TAG_GROUPS.map(({ key }) => {
+      const counts = tagCounts[key];
+
+      const sortedTags = [...counts.keys()].sort((a, b) => {
+        const countDifference = counts.get(b) - counts.get(a);
+
+        return countDifference || a.localeCompare(b, 'ko');
+      });
+
+      return [key, sortedTags];
+    })
+  );
+
+  const activeTags = Object.fromEntries(
+    TAG_GROUPS.map(({ key }) => [
+      key,
+      tags[key].filter(tag => availableTags[key].includes(tag)),
+    ])
+  );
+
+  const activeTagCount = TAG_GROUPS.reduce(
+    (count, { key }) => count + activeTags[key].length,
+    0
+  );
+
+  {
+    activeTagCount > 0 && (
+      <span> · 태그 {activeTagCount}개 선택</span>
+    )
+  }
 
   const otherWaysCount = items.filter(
     item => item.isOtherWays === true
@@ -92,7 +174,7 @@ export default function ArchiveIndex({
     query.trim() ||
     activeCategory ||
     activeProjectType ||
-    activeTags.length > 0 ||
+    activeTagCount > 0 ||
     onlyOtherWays ||
     onlyNewsletter;
 
@@ -100,18 +182,24 @@ export default function ArchiveIndex({
     setQuery('');
     setCategory('');
     setProjectType('');
-    setTags([]);
+    setTags(createEmptyTags());
     setOnlyOtherWays(false);
     setOnlyNewsletter(false);
     setLimit(PAGE_SIZE);
   }
 
-  function toggleTag(tag) {
-    setTags(current =>
-      current.includes(tag)
-        ? current.filter(t => t !== tag)
-        : [...current, tag]
-    );
+  function toggleTag(group, tag) {
+    setTags(current => {
+      const selected = current[group];
+
+      return {
+        ...current,
+        [group]: selected.includes(tag)
+          ? selected.filter(value => value !== tag)
+          : [...selected, tag],
+      };
+    });
+
     setLimit(PAGE_SIZE);
   }
 
@@ -315,41 +403,79 @@ export default function ArchiveIndex({
             </div>
           </div>
 
-          {allTags.length > 0 && (
-            <details className={styles.tagDetails}>
-              <summary className={styles.tagSummary}>
-                <span>
-                  태그 필터
-                  {activeTags.length > 0 && ` · ${activeTags.length}개 선택`}
-                </span>
-                <span className={styles.tagToggle} aria-hidden="true">
-                  ＋
-                </span>
-              </summary>
+          {TAG_GROUPS.map(({ key, label }) => {
+            const values = availableTags[key];
 
-              <div
-                className={styles.chips}
-                role="group"
-                aria-label="선택한 태그를 모두 포함하는 사례 보기"
-              >
-                {allTags.map(tag => (
-                  <button
-                    key={tag}
-                    type="button"
-                    aria-pressed={activeTags.includes(tag)}
-                    className={
-                      activeTags.includes(tag)
-                        ? styles.activeTag
-                        : styles.tagButton
-                    }
-                    onClick={() => toggleTag(tag)}
-                  >
-                    #{tag}
-                  </button>
-                ))}
+            if (values.length === 0) return null;
+
+            const expanded = Boolean(expandedTags[key]);
+            const primaryTags = values.slice(0, TAG_PREVIEW_COUNT);
+
+            const displayedTags = expanded
+              ? values
+              : values.filter(
+                tag =>
+                  primaryTags.includes(tag) ||
+                  activeTags[key].includes(tag)
+              );
+
+            const hiddenCount = values.length - displayedTags.length;
+            const panelId = `${id}-tags-${key}`;
+
+            return (
+              <div key={key} className={styles.filterGroup}>
+                <p>{label}</p>
+
+                <div
+                  id={panelId}
+                  className={styles.chips}
+                  role="group"
+                  aria-label={`${label} 필터`}
+                >
+                  {displayedTags.map(tag => {
+                    const selected = activeTags[key].includes(tag);
+
+                    return (
+                      <button
+                        key={tag}
+                        type="button"
+                        aria-pressed={selected}
+                        className={selected ? styles.activeTag : styles.tagButton}
+                        onClick={() => toggleTag(key, tag)}
+                      >
+                        {tag}
+
+                        <small className={styles.tagCount}>
+                          {tagCounts[key].get(tag) || 0}
+                        </small>
+                      </button>
+                    );
+                  })}
+
+                  {(expanded || hiddenCount > 0) && (
+                    <button
+                      type="button"
+                      className={styles.tagMore}
+                      aria-expanded={expanded}
+                      aria-controls={panelId}
+                      onClick={() =>
+                        setExpandedTags(current => ({
+                          ...current,
+                          [key]: !current[key],
+                        }))
+                      }
+                    >
+                      {expanded ? '접기' : `더보기 +${hiddenCount}`}
+
+                      <span aria-hidden="true">
+                        {expanded ? '⌃' : '⌄'}
+                      </span>
+                    </button>
+                  )}
+                </div>
               </div>
-            </details>
-          )}
+            );
+          })}
 
           <div className={styles.results}>
             <p role="status" aria-live="polite">
@@ -429,22 +555,26 @@ export default function ArchiveIndex({
                     </div>
 
                     <ul className={styles.cardTags}>
-                      {item.tags?.map(tag => (
-                        <li key={tag}>
-                          <button
-                            type="button"
-                            aria-pressed={activeTags.includes(tag)}
-                            className={
-                              activeTags.includes(tag)
-                                ? styles.selectedCardTag
-                                : ''
-                            }
-                            onClick={() => toggleTag(tag)}
-                          >
-                            #{tag}
-                          </button>
-                        </li>
-                      ))}
+                      {TAG_GROUPS.flatMap(({ key, label }) =>
+                        getTagValues(item, key).map(tag => {
+                          const selected = activeTags[key].includes(tag);
+
+                          return (
+                            <li key={`${key}-${tag}`}>
+                              <button
+                                type="button"
+                                title={label}
+                                aria-label={`${label}: ${tag}`}
+                                aria-pressed={selected}
+                                className={selected ? styles.selectedCardTag : ''}
+                                onClick={() => toggleTag(key, tag)}
+                              >
+                                #{tag}
+                              </button>
+                            </li>
+                          );
+                        })
+                      )}
                     </ul>
 
                     <div className={styles.cardFooter}>

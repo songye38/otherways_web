@@ -644,20 +644,47 @@
 
 
 .cardFooter {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: center;
-  gap: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 20px;
 }
 
 .cardFooter a {
-  white-space: nowrap;
-  flex-shrink: 0;
+    white-space: nowrap;
+    flex-shrink: 0;
 }
 
 .cardFooter a.newsletterLink {
-  color: #a62775;
+    color: #a62775;
+}
+
+
+.chips button.tagMore {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    color: #666;
+}
+
+.chips button.tagMore:hover {
+    background: transparent;
+    color: #171717;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.tagCount {
+  margin-left: 8px;
+  font-size: 0.8em;
+  font-weight: 400;
+  opacity: 0.65;
+  font-variant-numeric: tabular-nums;
 }
 
 @media (max-width: 760px) {
@@ -761,4 +788,3 @@
         font-size: 24px;
     }
 }
-

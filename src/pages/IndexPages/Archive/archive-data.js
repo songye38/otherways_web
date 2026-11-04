@@ -8,7 +8,12 @@ export const archiveItems = [
     question: '사용자가 마음대로 조작할 수 없는 앱이 있다면??',
     category: '실험적 디자인',
     projectType: '논문',
-    tags: ['생태 인터랙션', '동물의 리듬', '날씨', '비인간 중심 디자인', '사용자 통제', '느린 기술'],
+    tags: {
+      topics: ['생태와 자연', '인간과 기술'],
+      methods: ['생태 인터랙션'],
+      perspectives: ['비인간 중심 디자인', '느린 기술', '사용자 통제 비판'],
+      findings: ['동물과 날씨의 리듬', '사용자 통제의 제한'],
+    },
     image: './archive/01.jpg',
     imageAlt: '동물과 날씨의 리듬에 따라 달라지는 Wanderer 프로젝트의 인터페이스 또는 설치 장면',
     imageCredit: '',
@@ -23,7 +28,12 @@ export const archiveItems = [
     question: '디자인은 꼭 문제를 해결해야 할까?',
     category: '크리티컬 디자인',
     projectType: '디자인위크',
-    tags: ['문제 해결 비판', '디자인의 역할', '혼돈', '효율성 비판', '전시', '미완결성'],
+    tags: {
+      topics: ['디자인의 역할', '혼돈과 불확실성'],
+      methods: [],
+      perspectives: ['문제 해결 중심 디자인 비판', '효율성 비판'],
+      findings: ['미완결성의 가치'],
+    },
     imageAlt: 'TOUT EST CHAOS 전시 공간과 실험적 디자인 작품',
     image: './archive/02.jpg',
     sourceUrl: 'https://www.designboom.com/design/pli-office-tout-est-chaos-at-la-gaite-lyrique-for-paris-design-week-2026/',
@@ -37,7 +47,12 @@ export const archiveItems = [
     question: '대학이 ‘취업을 준비하는 곳’이 아니라 ‘지역을 회복시키는 곳’이라면?',
     category: '스페큘러티브 디자인',
     projectType: '프로젝트',
-    tags: ['미래 교육', '2070년 시나리오', '지역 공동체', '대학의 미래', '대안적 학습', '사회 시스템'],
+    tags: {
+      topics: ['미래 교육', '지역 공동체', '사회 시스템'],
+      methods: ['미래 시나리오'],
+      perspectives: ['대안적 교육', '지역 중심 교육'],
+      findings: ['2070년 대학의 미래', '교육과 지역 회복의 연결'],
+    },
     image: './archive/03.jpg',
     imageAlt: '지역과 학습이 연결되는 미래 교육기관 The Pluriversity의 시나리오 시각 자료',
     imageCredit: '',
@@ -52,7 +67,12 @@ export const archiveItems = [
     question: '미래는 누구의 상상으로 만들어질까?',
     category: '크리티컬 디자인',
     projectType: '설치·전시',
-    tags: ['탈식민주의', '미래 서사', '시간성', '대안적 미래', '문화적 관점', '전시'],
+    tags: {
+      topics: ['미래 사회', '시간과 기억', '문화와 정체성'],
+      methods: ['미래 서사'],
+      perspectives: ['탈식민주의', '대안적 미래'],
+      findings: ['미래 상상의 문화적 다양성', '시간에 대한 대안적 해석'],
+    },
     image: './archive/04.jpg',
     imageAlt: 'SLIPSTREAM 전시의 설치 작품 또는 미래와 시간성을 다루는 전시 장면',
     imageCredit: '',
@@ -67,7 +87,12 @@ export const archiveItems = [
     question: '인간이 아닌 감각으로 세상을 본다면?',
     category: '실험적 디자인',
     projectType: '설치·전시',
-    tags: ['수중 생명', '감각 번역', '비인간 중심 디자인', '생태 감수성', '인간과 자연', '다종 관계'],
+    tags: {
+      topics: ['생태와 자연', '감각과 신체'],
+      methods: ['감각 번역'],
+      perspectives: ['비인간 중심 디자인', '다종 관계'],
+      findings: ['비인간 감각의 경험 가능성', '인간과 자연의 감각적 연결'],
+    },
     image: './archive/05.jpg',
     imageAlt: '수중 생명체의 감각과 인간의 경험을 연결하는 Amphibious Humanity 프로젝트',
     imageCredit: '',
@@ -82,7 +107,13 @@ export const archiveItems = [
     question: 'AI에게 원주민의 지식을 넣으면 좋은 AI가 되는 걸까?',
     category: '디자인 픽션',
     projectType: '설치·전시',
-    tags: ['환경 복구', '인공지능', '지식 추출', '식민주의 비판', '기술 해결주의', '권력 구조'],
+    tags: {
+      topics: ['AI와 기술', '생태와 자연', '문화와 정체성'],
+      methods: ['디자인 픽션'],
+      perspectives: ['탈식민주의', '기술 해결주의 비판'],
+      findings: ['원주민 지식의 추출과 전유', '기술에 내재된 권력 구조'],
+    },
+
     image: './archive/06.jpg',
     imageAlt: '환경 복구 로봇의 허구적 설정을 표현한 The Aboriginal Robot 프로젝트 이미지',
     imageCredit: '',
@@ -97,7 +128,14 @@ export const archiveItems = [
     question: 'AI가 장인의 ‘속도’를 배운다면?',
     category: '실험적 디자인',
     projectType: '설치·전시',
-    tags: ['공예', '점토', '센서', '가상 환경', '느린 기술', '물질과 디지털'],
+
+    tags: {
+      topics: ['공예와 제작', 'AI와 기술', '재료와 물질'],
+      methods: ['재료 실험', '센서 기반 인터랙션'],
+      perspectives: ['느린 기술'],
+      findings: ['공예와 디지털 기술의 결합', '장인의 작업 리듬에 대한 탐구'],
+    },
+
     image: './archive/07.jpg',
     imageAlt: '점토 작업과 센서, 가상 환경이 연결된 Probably A Dog 실험 장면',
     imageCredit: '',
@@ -112,7 +150,14 @@ export const archiveItems = [
     question: 'AI에게 미래를 물었보면 왜 자꾸 비슷한 미래가 나올까?',
     category: '디자인 리서치',
     projectType: '논문',
-    tags: ['생성형 AI', '프롬프트', '미래 교육', '디자인 픽션', '공동 창작', '교육 연구'],
+
+    tags: {
+      topics: ['미래 교육', 'AI와 기술'],
+      methods: ['디자인 픽션', '프롬프트 실험', '공동 창작'],
+      perspectives: [],
+      findings: ['AI가 생성하는 미래 서사의 유사성', '프롬프트에 따른 미래 상상의 변화'],
+    },
+
     image: './archive/08.jpg',
     imageAlt: '생성형 AI 프롬프트를 이용한 미래 교육 시나리오와 공동 창작 과정',
     imageCredit: '',
@@ -127,7 +172,14 @@ export const archiveItems = [
     question: '미래의 기술을 상상할 때, 왜 ‘저항하는 사람’까지 디자인해야 할까?',
     category: '디자인 픽션',
     projectType: '논문',
-    tags: ['비판적 교육학', '감시 기술', '사용자 저항', '권력 관계', '사회적 목적', '기술 비판'],
+
+    tags: {
+      topics: ['AI와 기술', '감시와 프라이버시', '교육과 학습'],
+      methods: ['디자인 픽션'],
+      perspectives: ['비판적 교육학', '기술 비판'],
+      findings: ['기술에 대한 사용자 저항', '기술과 사용자 사이의 권력 관계'],
+    },
+
     image: './archive/09.jpg',
     imageAlt: '감시 기술과 저항하는 사용자를 상상하는 디자인 픽션 연구 자료',
     imageCredit: '',
@@ -142,7 +194,14 @@ export const archiveItems = [
     question: '우리가 상상하는 ‘자연’도 사실 디자인된 자연 아닐까?',
     category: '스페큘러티브 디자인',
     projectType: '설치·전시',
-    tags: ['인공 서식지', '자연의 이미지', '생태적 상상력', '이상적 풍경', '인공 자연', '미래 환경'],
+
+    tags: {
+      topics: ['생태와 자연', '미래 환경'],
+      methods: [],
+      perspectives: ['생태적 상상력', '인공 자연 비판'],
+      findings: ['이상적 자연 이미지의 인공성', '자연과 인공의 경계'],
+    },
+
     image: './archive/10.jpg',
     imageAlt: '인공적으로 조성된 이상적 자연이나 서식지를 표현한 Prefab Paradise 작품',
     imageCredit: '',
@@ -157,7 +216,14 @@ export const archiveItems = [
     question: '부모 역할도 ‘서비스’가 될 수 있을까?',
     category: '디자인 픽션',
     projectType: '프로젝트',
-    tags: ['인공지능', '유전자 조작', '반려동물', '돌봄', '생명윤리', '미래의 양육'],
+
+    tags: {
+      topics: ['AI와 기술', '생명과 돌봄', '미래 사회'],
+      methods: ['디자인 픽션'],
+      perspectives: ['생명윤리', '돌봄 윤리'],
+      findings: ['양육의 서비스화', '유전자 조작 반려동물과 AI 돌봄의 결합'],
+    },
+
     image: './archive/11.jpg',
     imageAlt: '유전자 조작 반려동물과 AI 양육 시스템을 상상한 Anthos 프로젝트 이미지',
     imageCredit: '',
@@ -172,7 +238,14 @@ export const archiveItems = [
     question: '우리가 도시의 ‘지하’를 자원으로만 상상하고 있다면?',
     category: '디자인 픽션',
     projectType: '연구',
-    tags: ['도시의 미래', '지하 공간', '파리', '참여형 워크숍', '도시 인프라', '대안적 시나리오'],
+
+    tags: {
+      topics: ['도시와 공간', '미래 사회', '도시 인프라'],
+      methods: ['참여형 워크숍', '미래 시나리오', '디자인 픽션'],
+      perspectives: ['공유 자원으로서의 공간', '대안적 도시 미래'],
+      findings: ['지하 공간의 새로운 활용 가능성', '도시 인프라에 대한 인식의 확장'],
+    },
+
     image: './archive/12.jpg',
     imageAlt: '파리의 지하 공간을 새로운 관점으로 탐색하는 디자인 픽션 워크숍 자료',
     imageCredit: '',
@@ -187,7 +260,14 @@ export const archiveItems = [
     question: 'AI의 눈을 피하는 옷을 만든다면?',
     category: '크리티컬 디자인',
     projectType: '설치·전시',
-    tags: ['기계 시각', 'AI 인식', '의복', '감시', '알고리즘의 한계', '시각적 저항'],
+
+    tags: {
+      topics: ['AI와 기술', '감시와 프라이버시', '패션과 의복'],
+      methods: ['시각적 실험'],
+      perspectives: ['기술 비판', '감시와 통제 비판'],
+      findings: ['기계 시각의 인식 한계', '의복을 통한 시각적 저항'],
+    },
+
     image: './archive/13.jpg',
     imageAlt: '기계 시각의 인식 경계를 시험하는 의복 또는 패턴의 모습',
     imageCredit: '',
@@ -202,7 +282,14 @@ export const archiveItems = [
     question: '기후 데이터를 ‘그래프’가 아니라 ‘미래 세계’로 바꾸면?',
     category: '스페큘러티브 디자인',
     projectType: '설치·전시',
-    tags: ['기후위기', '가뭄', '연쇄적 영향', '미래 시나리오', '고성능 컴퓨팅', '환경 데이터'],
+
+    tags: {
+      topics: ['기후위기', '생태와 자연', '미래 환경'],
+      methods: ['미래 시나리오', '데이터 시각화'],
+      perspectives: ['생태적 상상력'],
+      findings: ['가뭄의 연쇄적 영향', '환경 데이터의 미래 서사화'],
+    },
+
     image: './archive/14.jpg',
     imageAlt: '가뭄과 기후변화의 연쇄적인 미래를 표현한 Echoes of Drought 시각 자료',
     imageCredit: '',
@@ -217,7 +304,14 @@ export const archiveItems = [
     question: '내가 죽은 뒤에도 ‘내 AI’가 계속 행동한다면?',
     category: '디자인 픽션',
     projectType: '설치·전시',
-    tags: ['AI 에이전트', '디지털 사후세계', '권한 위임', '책임', '디지털 유산', '미래 거버넌스'],
+
+    tags: {
+      topics: ['AI와 기술', '디지털 사후세계', '미래 사회'],
+      methods: ['디자인 픽션'],
+      perspectives: ['AI 윤리', '미래 거버넌스'],
+      findings: ['사후 AI 에이전트의 권한 위임', '디지털 유산의 책임 문제'],
+    },
+
     image: './archive/15.jpg',
     imageAlt: '인간 사후에도 작동하는 AI 에이전트의 권한과 책임을 상상한 디자인 픽션',
     imageCredit: '',
@@ -233,7 +327,14 @@ export const archiveItems = [
     question: 'AI가 기억을 복원한다면, 그건 ‘기억’일까?',
     category: '크리티컬 디자인',
     projectType: '설치·전시',
-    tags: ['식물 아카이브', '사헬 지역', '생성형 AI', '기억', '기록의 공백', '생태 지식'],
+
+    tags: {
+      topics: ['생태와 자연', 'AI와 기술', '시간과 기억'],
+      methods: ['아카이브 리서치', 'AI 이미지 생성'],
+      perspectives: ['기술 비판', '기록과 재현의 윤리'],
+      findings: ['생태 기록의 공백', 'AI가 재구성한 기억의 진정성'],
+    },
+
     image: './archive/16.jpg',
     imageAlt: '누락된 식물 기록과 AI 생성 이미지를 함께 탐색하는 Once Upon A Garden 작품',
     imageCredit: '',
@@ -248,7 +349,14 @@ export const archiveItems = [
     question: '기계도 ‘숭배’할 수 있을까?',
     category: '실험적 디자인',
     projectType: '설치·전시',
-    tags: ['로봇', '명상', '태양 추적', '느린 기술', '생산성 비판', '기술의 목적'],
+
+    tags: {
+      topics: ['AI와 기술', '감각과 신체', '생태와 자연'],
+      methods: ['로봇 인터랙션'],
+      perspectives: ['느린 기술', '생산성 비판'],
+      findings: ['명상하는 로봇의 가능성', '기술의 목적에 대한 재해석'],
+    },
+
     image: './archive/17.jpg',
     imageAlt: '태양의 움직임을 따라 천천히 움직이는 Robotic Meditation 로봇',
     imageCredit: '',
@@ -263,7 +371,14 @@ export const archiveItems = [
     question: '화성에서 민주주의를 처음 설계한다면?',
     category: '스페큘러티브 디자인',
     projectType: '설치·전시',
-    tags: ['화성 정착', '민주주의', '회복탄력성', '참여형 디자인', '미래 거버넌스', '자원 관리', '공동체'],
+
+    tags: {
+      topics: ['미래 사회', '우주와 탐사', '사회 시스템'],
+      methods: ['참여형 디자인', '미래 시나리오'],
+      perspectives: ['미래 거버넌스', '공동체 중심 디자인'],
+      findings: ['화성 사회의 민주적 의사결정', '제한된 자원의 공동 관리', '회복탄력적인 공동체 설계'],
+    },
+
     image: './archive/18.jpg',
     imageAlt: '화성 정착 사회의 주거, 식량, 거버넌스를 함께 상상하는 MARS! 프로젝트',
     imageCredit: '',
@@ -278,7 +393,14 @@ export const archiveItems = [
     question: '약탈된 유물을 돌려주는 미래는 어떤 모습일까?',
     category: '디자인 픽션',
     projectType: '설치·전시',
-    tags: ['문화재 반환', '탈식민주의', '고고학', '미래 서사', '생태 위기', '집단적 복구', '포털 기술'],
+
+    tags: {
+      topics: ['문화와 정체성', '생태와 자연', '미래 사회'],
+      methods: ['디자인 픽션', '미래 서사'],
+      perspectives: ['탈식민주의', '문화재 반환과 복원'],
+      findings: ['약탈 문화재의 미래 반환 가능성', '생태 위기와 집단적 복구의 연결'],
+    },
+
     image: './archive/19.jpg',
     imageAlt: '약탈된 유물의 반환을 상상하는 Soft Crash 전시의 일러스트 또는 설치 작품',
     imageCredit: '',
@@ -293,7 +415,14 @@ export const archiveItems = [
     question: '아직 도착하지 않은 소행성의 주인은 누구일까?',
     category: '크리티컬 디자인',
     projectType: '설치·전시',
-    tags: ['소행성', '소유권', '가치 체계', '우주 자원', 'AI 생성 이미지', '블록체인', '예술적 전유'],
+
+    tags: {
+      topics: ['우주와 탐사', 'AI와 기술', '사회 시스템'],
+      methods: ['AI 이미지 생성', '사변적 시나리오'],
+      perspectives: ['소유권 비판', '가치 체계 비판'],
+      findings: ['우주 자원의 소유권 문제', '미래 자원에 대한 예술적 전유'],
+    },
+
     image: './archive/20.jpg',
     imageAlt: '소행성 16 Psyche를 대상으로 한 IRIDIA의 생성 이미지 또는 프로젝트 시각화',
     imageCredit: '',
@@ -308,7 +437,14 @@ export const archiveItems = [
     question: '오염된 땅의 기억을 재료로 만들 수 있을까?',
     category: '실험적 디자인',
     projectType: '설치·전시',
-    tags: ['오염된 토지', '바이오 소재', '지역 폐기물', '장소의 기억', '사운드 아트', '환경 정의', '재료의 이력'],
+
+    tags: {
+      topics: ['생태와 자연', '재료와 물질', '시간과 기억'],
+      methods: ['재료 실험', '사운드 아트'],
+      perspectives: ['환경 정의', '장소 기반 디자인'],
+      findings: ['오염된 토지의 기억을 담은 재료', '지역 폐기물의 새로운 활용 가능성'],
+    },
+
     image: './archive/21.jpg',
     imageAlt: '라디오와 바이오 소재, 재활용 직물을 활용한 Superfund Radio Greenhouse 전시',
     imageCredit: '',
@@ -323,7 +459,14 @@ export const archiveItems = [
     question: '우리 머리 위를 지나가는 위성을 몸으로 느낄 수 있다면?',
     category: '스페큘러티브 디자인',
     projectType: '설치·전시',
-    tags: ['웨어러블', '위성 데이터', '감각 인터페이스', '우주 인프라', '공유 자원', '디지털 권리', 'DIY 기술'],
+
+    tags: {
+      topics: ['우주와 탐사', 'AI와 기술', '감각과 신체'],
+      methods: ['감각 번역', '웨어러블 프로토타이핑'],
+      perspectives: ['디지털 권리', '공유 자원으로서의 기술'],
+      findings: ['위성 데이터의 신체적 경험', '보이지 않는 우주 인프라의 감각화'],
+    },
+
     image: './archive/22.jpg',
     imageAlt: '위성 통과를 빛과 소리, 진동으로 전달하는 A Satellite in My Body 웨어러블 장치',
     imageCredit: '',
@@ -338,7 +481,14 @@ export const archiveItems = [
     question: '곰팡이를 반려동물처럼 돌보는 미래가 온다면?',
     category: '스페큘러티브 디자인',
     projectType: '설치·전시',
-    tags: ['미생물', '바이오디자인', '돌봄', '웨어러블', '비인간 중심 디자인', '공생', '디지털 반려동물'],
+
+    tags: {
+      topics: ['생태와 자연', '생명과 돌봄', '재료와 물질'],
+      methods: ['바이오디자인', '웨어러블 프로토타이핑'],
+      perspectives: ['비인간 중심 디자인', '다종 관계', '돌봄 윤리'],
+      findings: ['미생물과 인간의 공생 관계', '미생물을 돌봄의 대상으로 바라보는 경험'],
+    },
+
     image: './archive/23.jpg',
     imageAlt: '투명한 배양실과 디지털 아바타 KojiMoji가 있는 KojiGotchi 웨어러블 프로토타입',
     imageCredit: '',
@@ -353,7 +503,14 @@ export const archiveItems = [
     question: '숨길 게 없다면, AI가 내 일상을 모두 기록해도 괜찮을까?',
     category: '크리티컬 디자인',
     projectType: '설치·전시',
-    tags: ['개인정보', 'AI 감시', '데이터 해석', '사생활', '일상 기록', '알고리즘의 권력', '참여형 전시'],
+
+    tags: {
+      topics: ['AI와 기술', '감시와 프라이버시', '데이터와 정보'],
+      methods: ['참여형 설치', '데이터 시각화'],
+      perspectives: ['기술 비판', '감시와 통제 비판'],
+      findings: ['일상 데이터의 감시와 기록', '알고리즘의 해석 권력', '개인정보 공개의 윤리적 문제'],
+    },
+
     image: './archive/24.jpg',
     imageAlt: 'AI가 개인의 일상을 관찰하고 전기를 실시간 출력하는 transparent.citizen 설치',
     imageCredit: '',
@@ -368,7 +525,14 @@ export const archiveItems = [
     question: '책을 끝까지 쓰는 사람이 인간이 아니라 미생물이라면?',
     category: '실험적 디자인',
     projectType: '설치·전시',
-    tags: ['바이오플라스틱', '미생물', '생분해', '비인간 중심 디자인', '시간성', '공동 창작', '재료의 변화'],
+
+    tags: {
+      topics: ['생태와 자연', '재료와 물질', '시간과 기억'],
+      methods: ['재료 실험', '바이오디자인', '공동 창작'],
+      perspectives: ['비인간 중심 디자인', '물질의 행위성'],
+      findings: ['미생물에 의한 재료의 변화', '생분해를 통한 시간의 시각화', '비인간 존재의 창작 참여'],
+    },
+
     image: './archive/25.jpg',
     imageAlt: '미생물과 토양에 의해 분해 흔적이 남은 바이오플라스틱 책의 페이지',
     imageCredit: '',
@@ -384,15 +548,14 @@ export const archiveItems = [
     question: 'AI가 대신 일해주는 줄 알았는데, 우리가 AI를 위해 일하고 있다면?',
     category: '크리티컬 디자인',
     projectType: '디자인위크',
-    tags: [
-      '인공지능',
-      '숨겨진 노동',
-      '디지털 노동',
-      '자동화 비판',
-      'CAPTCHA',
-      '인터페이스 비판',
-      '기술과 권력'
-    ],
+
+    tags: {
+      topics: ['AI와 기술', '노동과 생산성', '데이터와 정보'],
+      methods: [],
+      perspectives: ['기술 비판', '자동화 비판', '기술과 권력'],
+      findings: ['AI 시스템을 지탱하는 숨겨진 노동', 'CAPTCHA를 통한 인간의 데이터 노동', '자동화와 인간 노동의 역설'],
+    },
+
     image: './archive/26.jpg',
     imageAlt: '여러 디스플레이와 전자장치, 산업용 선반으로 구성된 디지털 노동을 주제로 한 설치 작품',
     imageCredit: '',
@@ -407,15 +570,14 @@ export const archiveItems = [
     question: '안전을 감시가 아닌 돌봄으로 설계한다면?',
     category: '스페큘러티브 디자인',
     projectType: '디자인위크',
-    tags: [
-      '돌봄',
-      '공공 공간',
-      '안전과 감시',
-      '참여형 디자인',
-      '사회적 포용',
-      '도시 인프라',
-      '다양한 사용자 경험'
-    ],
+
+    tags: {
+      topics: ['생명과 돌봄', '도시와 공간', '감시와 프라이버시'],
+      methods: ['참여형 디자인'],
+      perspectives: ['돌봄 윤리', '사회적 포용', '감시와 통제 비판'],
+      findings: ['감시를 대체하는 돌봄 중심 안전', '다양한 사용자를 고려한 공공 공간', '안전과 돌봄의 관계 재설계'],
+    },
+
     image: './archive/27.jpg',
     imageAlt: 'CCTV와 그물망, 콘크리트 구조물 및 관람객의 참여 기록으로 구성된 공공 안전 설치 작품',
     imageCredit: '',
@@ -430,15 +592,14 @@ export const archiveItems = [
     question: '온라인에서 말이 검열된다면, 춤이 새로운 언어가 될 수 있을까?',
     category: '크리티컬 디자인',
     projectType: '디자인위크',
-    tags: [
-      '알고리즘',
-      '플랫폼 검열',
-      '표현의 자유',
-      '대안적 소통',
-      '몸짓 언어',
-      '디지털 권리',
-      '기술과 권력'
-    ],
+
+    tags: {
+      topics: ['AI와 기술', '감각과 신체', '디지털 권리'],
+      methods: ['신체 기반 인터랙션'],
+      perspectives: ['기술 비판', '기술과 권력'],
+      findings: ['춤을 통한 대안적 소통', '플랫폼 검열에 대한 신체적 저항', '알고리즘 환경에서의 표현의 자유'],
+    },
+
     image: './archive/28.jpg',
     imageAlt: '춤과 신체 움직임을 통해 알고리즘 감시와 새로운 의사소통 방식을 탐구하는 설치 작품',
     imageCredit: '',
@@ -454,15 +615,14 @@ export const archiveItems = [
     question: '타인의 개인정보를 보호하기 위해 내 개인정보를 포기할 수 있을까?',
     category: '크리티컬 디자인',
     projectType: '디자인위크',
-    tags: [
-      '개인정보',
-      '데이터 프라이버시',
-      '디지털 감시',
-      '데이터 윤리',
-      '정보 비대칭',
-      '참여형 설치',
-      '기술과 권력'
-    ],
+
+    tags: {
+      topics: ['감시와 프라이버시', '데이터와 정보', 'AI와 기술'],
+      methods: ['참여형 설치'],
+      perspectives: ['데이터 윤리', '기술과 권력'],
+      findings: ['개인정보 보호의 집단적 딜레마', '정보 비대칭에 따른 권력 관계'],
+    },
+
     image: './archive/29.jpg',
     imageAlt: 'RE:GISTER 설치 작품의 인터랙티브 장치와 관람객 참여 장면',
     imageCredit: '',
@@ -477,15 +637,14 @@ export const archiveItems = [
     question: '모든 순간을 기록하려는 우리는 정작 무엇을 놓치고 있을까?',
     category: '크리티컬 디자인',
     projectType: '디자인위크',
-    tags: [
-      '스마트폰',
-      '디지털 기록',
-      '관람 경험',
-      '시선과 주의',
-      '공공의 경험',
-      '인터랙티브 설치',
-      '기술과 인간'
-    ],
+
+    tags: {
+      topics: ['AI와 기술', '감각과 신체', '디지털 기록'],
+      methods: ['참여형 설치', '인터랙티브 설치'],
+      perspectives: ['기술 비판'],
+      findings: ['기록 행위와 직접 경험 사이의 긴장', '스마트폰이 관람 경험에 미치는 영향', '시선과 주의의 변화'],
+    },
+
     image: './archive/30.jpg',
     imageAlt: 'For Your Eyes Only 설치 작품의 인터랙티브 장치와 관람객 참여 장면',
     imageCredit: '',
@@ -500,15 +659,14 @@ export const archiveItems = [
     question: 'AI가 내 말을 계속 긍정할 때, 나는 여전히 스스로 판단하고 있을까?',
     category: '크리티컬 디자인',
     projectType: '디자인위크',
-    tags: [
-      '인공지능',
-      'AI 아첨',
-      '알고리즘 편향',
-      '비판적 사고',
-      '인간의 판단',
-      'AI 윤리',
-      '인간과 AI의 관계'
-    ],
+
+    tags: {
+      topics: ['AI와 기술', '인간과 기술'],
+      methods: ['참여형 설치'],
+      perspectives: ['AI 윤리', '기술 비판'],
+      findings: ['AI의 과도한 동조와 아첨', 'AI 응답이 인간의 판단에 미치는 영향', '알고리즘 편향과 비판적 사고의 관계'],
+    },
+
     image: './archive/31.jpg',
     imageAlt: 'The Affirmation Machine 설치 작품의 인터랙티브 장치와 관람객 참여 장면',
     imageCredit: '',
@@ -523,15 +681,14 @@ export const archiveItems = [
     question: '기계가 실패할 때, 새로운 표현의 재료가 만들어진다면?',
     category: '크리티컬 디자인',
     projectType: '디자인위크',
-    tags: [
-      '3D 프린팅',
-      '제작의 실패',
-      '우연성',
-      '재료 실험',
-      '제작 과정',
-      '기계와 창작',
-      '불완전성'
-    ],
+
+    tags: {
+      topics: ['재료와 물질', '공예와 제작', '인간과 기술'],
+      methods: ['재료 실험', '3D 프린팅'],
+      perspectives: ['효율성 비판', '불완전성의 가치'],
+      findings: ['제작 실패의 창작 가능성', '우연성을 통한 새로운 표현', '기계의 오류를 재료로 활용'],
+    },
+
     image: './archive/32.jpg',
     imageAlt: 'Making Messes 설치 작품의 인터랙티브 장치와 관람객 참여 장면',
     imageCredit: '',
@@ -546,15 +703,14 @@ export const archiveItems = [
     question: '우리는 언제부터 기술을 사용하는 대신 숭배하기 시작했을까?',
     category: '크리티컬 디자인',
     projectType: '디자인위크',
-    tags: [
-      '기술 숭배',
-      '디지털 의식',
-      '인터페이스',
-      '사용자 행동',
-      '기술 의존',
-      '참여형 설치',
-      '기술과 권력'
-    ],
+
+    tags: {
+      topics: ['AI와 기술', '인간과 기술'],
+      methods: ['참여형 설치'],
+      perspectives: ['기술 비판', '기술과 권력'],
+      findings: ['기술 사용의 의례화', '인터페이스가 사용자 행동에 미치는 영향', '기술 의존과 숭배의 관계'],
+    },
+
     image: './archive/33.jpg',
     imageAlt: 'The Entity 설치 작품의 인터랙티브 장치와 관람객 참여 장면',
     imageCredit: '',
@@ -569,15 +725,14 @@ export const archiveItems = [
     question: '오늘날의 전력 설비가 먼 미래의 화석으로 발견된다면, 후손들은 우리 문명을 어떻게 해석할까?',
     category: '크리티컬 디자인',
     projectType: '디자인위크',
-    tags: [
-      '미래 고고학',
-      '산업 유산',
-      '물질의 시간성',
-      '에너지 인프라',
-      '포스트휴먼',
-      '인류세',
-      '미래 시나리오'
-    ],
+
+    tags: {
+      topics: ['미래 사회', '도시 인프라', '시간과 기억'],
+      methods: ['미래 시나리오', '미래 고고학'],
+      perspectives: ['포스트휴머니즘', '인류세'],
+      findings: ['에너지 인프라의 미래 유산화', '물질에 축적되는 시간의 흔적', '미래 세대의 관점에서 재해석한 현대 문명'],
+    },
+
     image: './archive/34.jpg',
     imageAlt: 'Eternal Artefact',
     imageCredit: '',
@@ -592,15 +747,14 @@ export const archiveItems = [
     question: '옷의 과잉생산을 시의회 안건으로 올린다면 무엇이 달라질까?',
     category: '크리티컬 디자인',
     projectType: '디자인위크',
-    tags: [
-      '패션 산업',
-      '과잉생산',
-      '지속가능성',
-      '정치적 디자인',
-      '시민 참여',
-      '제도적 실험',
-      '공공 의사결정'
-    ],
+
+    tags: {
+      topics: ['패션과 의복', '생태와 자연', '사회 시스템'],
+      methods: ['참여형 디자인', '제도적 실험'],
+      perspectives: ['정치적 디자인', '지속가능성'],
+      findings: ['패션 과잉생산의 공공 의제화', '시민 참여를 통한 제도 변화의 가능성', '의복 소비와 정치적 의사결정의 연결'],
+    },
+
     image: './archive/35.jpg',
     imageAlt: 'Eternal Artefact',
     imageCredit: '',
@@ -615,15 +769,14 @@ export const archiveItems = [
     question: '기후재난 앞에서 우리는 혼자 탈출할 도구를 만들까, 함께 남을 도구를 만들까?',
     category: '크리티컬 디자인',
     projectType: '디자인위크',
-    tags: [
-      '기후위기',
-      '재난 대응',
-      '생존 도구',
-      '사회적 불평등',
-      '돌봄과 공동체',
-      '유지와 수리',
-      '미래 시나리오'
-    ],
+
+    tags: {
+      topics: ['기후위기', '생명과 돌봄', '사회 시스템'],
+      methods: ['미래 시나리오', '사변적 프로토타이핑'],
+      perspectives: ['돌봄 윤리', '사회적 불평등', '유지와 수리'],
+      findings: ['재난 대응에서 개인 생존과 공동체 돌봄의 대비', '기후위기가 드러내는 사회적 불평등', '함께 살아남기 위한 도구의 가능성'],
+    },
+
     image: './archive/36.jpg',
     imageAlt: 'Tools for Collapse',
     imageCredit: '',
@@ -638,15 +791,14 @@ export const archiveItems = [
     question: '한 사람의 기억을 이어 붙여 도시의 모습을 만들 수 있을까?',
     category: '크리티컬 디자인',
     projectType: '디자인위크',
-    tags: [
-      '도시의 기억',
-      '이주와 정체성',
-      '구술 리서치',
-      '전통 공예',
-      '조각보',
-      '시각언어',
-      '문화적 정체성'
-    ],
+
+    tags: {
+      topics: ['도시와 공간', '시간과 기억', '문화와 정체성'],
+      methods: ['구술 리서치', '전통 공예'],
+      perspectives: ['문화적 정체성', '장소 기반 디자인'],
+      findings: ['개인의 기억을 통한 도시 정체성의 재구성', '조각보를 활용한 기억의 시각화', '이주 경험과 도시의 기억 사이의 연결'],
+    },
+
     image: './archive/37.jpg',
     imageAlt: 'Visual DNA: Woven memories of Incheon',
     imageCredit: '',
@@ -666,15 +818,14 @@ export const archiveItems = [
     question: '우리가 사용하는 도구는 단순히 일을 돕는 걸까, 아니면 우리의 행동과 관계까지 바꾸는 걸까?',
     category: '크리티컬 디자인',
     projectType: '디자인위크',
-    tags: [
-      '도구와 행동',
-      '인간과 자연',
-      '신체적 경험',
-      '참여형 설치',
-      '원예 도구',
-      '행동 유도',
-      '관계적 디자인'
-    ],
+
+    tags: {
+      topics: ['생태와 자연', '감각과 신체', '인간과 기술'],
+      methods: ['참여형 설치', '신체 기반 인터랙션'],
+      perspectives: ['관계적 디자인', '비인간 중심 디자인'],
+      findings: ['도구가 인간의 행동을 유도하는 방식', '원예 도구를 통한 인간과 자연의 관계 변화', '도구의 기능을 넘어선 관계 형성 가능성'],
+    },
+
     image: './archive/38.jpg',
     imageAlt: 'How A Garden Becomes A Dialogue — Di Mao',
     imageCredit: '',
@@ -689,15 +840,14 @@ export const archiveItems = [
     question: '건축 재료를 연구하는 과정 자체가 하나의 건축물이 될 수 있을까?',
     category: '크리티컬 디자인',
     projectType: '디자인위크',
-    tags: [
-      '지속가능한 건축',
-      '대안 건축 재료',
-      '지역 자원',
-      '재료 실험',
-      '참여형 제작',
-      '시행착오',
-      '제작 과정의 전시'
-    ],
+
+    tags: {
+      topics: ['재료와 물질', '도시와 공간', '생태와 자연'],
+      methods: ['재료 실험', '참여형 제작'],
+      perspectives: ['지속가능성', '지역 자원 중심 디자인'],
+      findings: ['지역 자원을 활용한 대안 건축 재료', '시행착오의 생산적 역할', '재료 연구 과정 자체의 건축적 표현 가능성'],
+    },
+
     image: './archive/39.jpg',
     imageAlt: 'Dirty Works — CoolBricks',
     imageCredit: '',
@@ -712,15 +862,14 @@ export const archiveItems = [
     question: '후각이 사라지는 미래에는 냄새를 기억하는 인공 장기가 필요할까?',
     category: '크리티컬 디자인',
     projectType: '디자인위크',
-    tags: [
-      '후각 디자인',
-      '감각의 미래',
-      '감각 아카이빙',
-      '기억과 감정',
-      '인공 감각 기관',
-      '미래 시나리오',
-      '유리 공예'
-    ],
+
+    tags: {
+      topics: ['감각과 신체', '시간과 기억', '미래 사회'],
+      methods: ['미래 시나리오', '감각 아카이빙', '유리 공예'],
+      perspectives: [],
+      findings: ['후각과 기억 및 감정의 연결', '냄새를 보존하는 인공 감각 기관의 가능성', '감각 상실이 가져올 미래의 변화'],
+    },
+
     image: './archive/40.jpg',
     imageAlt: 'The Smelling Brain',
     imageCredit: '',
@@ -735,15 +884,14 @@ export const archiveItems = [
     question: '옷이 내 감정을 대신 표현한다면, 그것은 보호일까 감시일까?',
     category: '크리티컬 디자인',
     projectType: '논문',
-    tags: [
-      '웨어러블 기술',
-      '소프트 로보틱스',
-      '감정 표현',
-      '비언어적 소통',
-      '사변적 프로토타입',
-      '참여형 리서치',
-      '프라이버시'
-    ],
+
+    tags: {
+      topics: ['패션과 의복', '감각과 신체', '감시와 프라이버시'],
+      methods: ['사변적 프로토타입', '참여형 리서치', '웨어러블 프로토타이핑'],
+      perspectives: ['기술 비판', '프라이버시 윤리'],
+      findings: ['의복을 통한 비언어적 감정 표현', '감정 표현과 프라이버시 사이의 긴장', '소프트 로보틱스를 활용한 의복의 상호작용 가능성'],
+    },
+
     image: './archive/41.jpg',
     imageAlt: 'Soft Robotic Technological Probe for Speculative Fashion Futures',
     imageCredit: '',
@@ -758,15 +906,14 @@ export const archiveItems = [
     question: '재료가 예상과 다르게 반응할 때, 그것도 디자인의 방법이 될 수 있을까?',
     category: '크리티컬 디자인',
     projectType: '논문',
-    tags: [
-      '재료 중심 디자인',
-      '지열 점토',
-      '물질의 행위성',
-      '포스트휴머니즘',
-      '상황적 리서치',
-      '실천 기반 연구',
-      '우연성과 실패'
-    ],
+
+    tags: {
+      topics: ['재료와 물질', '생태와 자연'],
+      methods: ['상황적 리서치', '실천 기반 연구', '재료 실험'],
+      perspectives: ['포스트휴머니즘', '물질의 행위성'],
+      findings: ['재료의 비예측성', '실패의 생산적 역할', '재료와 디자이너의 상호작용'],
+    },
+
     image: './archive/42.jpg',
     imageAlt: 'From Matter to Method: Situated and Relational Approaches Through Geothermal Clays',
     imageCredit: '',
@@ -781,15 +928,14 @@ export const archiveItems = [
     question: '더 효율적인 미래가 우리가 원하는 미래와 다를 수 있을까?',
     category: '크리티컬 디자인',
     projectType: '논문',
-    tags: [
-      '시스테믹 디자인',
-      '미래 시나리오',
-      '사변적 프로토타입',
-      '시스템 맵핑',
-      '참여형 미래 연구',
-      '기술과 노동',
-      '미래의 가치 충돌'
-    ],
+
+    tags: {
+      topics: ['미래 사회', '사회 시스템', '노동과 생산성'],
+      methods: ['시스템 맵핑', '미래 시나리오', '사변적 프로토타입', '참여형 리서치'],
+      perspectives: ['시스테믹 디자인', '기술 비판'],
+      findings: ['효율성과 사회적 가치 사이의 충돌', '비판적 미래 상상과 실용적 시스템 설계의 결합'],
+    },
+
     image: './archive/43.jpg',
     imageAlt: 'Systemic Futures: Integrating Critical Speculation and Systemic Design Pragmatism',
     imageCredit: '',
