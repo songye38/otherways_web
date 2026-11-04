@@ -24,7 +24,6 @@ export const archiveItems = [
     category: '크리티컬 디자인',
     projectType: '디자인위크',
     tags: ['문제 해결 비판', '디자인의 역할', '혼돈', '효율성 비판', '전시', '미완결성'],
-    image: '',
     imageAlt: 'TOUT EST CHAOS 전시 공간과 실험적 디자인 작품',
     image: './archive/02.jpg',
     sourceUrl: 'https://www.designboom.com/design/pli-office-tout-est-chaos-at-la-gaite-lyrique-for-paris-design-week-2026/',
@@ -657,6 +656,148 @@ export const archiveItems = [
   },
 
 
-  
-  //26.11.xx일 정리 
+
+  //26.11.04일 정리 
+
+  {
+    id: '38',
+    name: 'How A Garden Becomes A Dialogue — Di Mao',
+    publishedAt: '2026-10-17',
+    question: '우리가 사용하는 도구는 단순히 일을 돕는 걸까, 아니면 우리의 행동과 관계까지 바꾸는 걸까?',
+    category: '크리티컬 디자인',
+    projectType: '디자인위크',
+    tags: [
+      '도구와 행동',
+      '인간과 자연',
+      '신체적 경험',
+      '참여형 설치',
+      '원예 도구',
+      '행동 유도',
+      '관계적 디자인'
+    ],
+    image: './archive/38.jpg',
+    imageAlt: 'How A Garden Becomes A Dialogue — Di Mao',
+    imageCredit: '',
+    sourceUrl: 'https://ddw.nl/en/programme/archive/2026/how-a-garden-becomes-a-dialogue',
+    newsletterUrl: '',
+    isOtherWays: false
+  },
+  {
+    id: '39',
+    name: 'Dirty Works — CoolBricks',
+    publishedAt: '2026-10-17',
+    question: '건축 재료를 연구하는 과정 자체가 하나의 건축물이 될 수 있을까?',
+    category: '크리티컬 디자인',
+    projectType: '디자인위크',
+    tags: [
+      '지속가능한 건축',
+      '대안 건축 재료',
+      '지역 자원',
+      '재료 실험',
+      '참여형 제작',
+      '시행착오',
+      '제작 과정의 전시'
+    ],
+    image: './archive/39.jpg',
+    imageAlt: 'Dirty Works — CoolBricks',
+    imageCredit: '',
+    sourceUrl: 'https://ddw.nl/en/programme/archive/2026/dirty-works',
+    newsletterUrl: '',
+    isOtherWays: false
+  },
+  {
+    id: '40',
+    name: 'The Smelling Brain',
+    publishedAt: '2026-10-17',
+    question: '후각이 사라지는 미래에는 냄새를 기억하는 인공 장기가 필요할까?',
+    category: '크리티컬 디자인',
+    projectType: '디자인위크',
+    tags: [
+      '후각 디자인',
+      '감각의 미래',
+      '감각 아카이빙',
+      '기억과 감정',
+      '인공 감각 기관',
+      '미래 시나리오',
+      '유리 공예'
+    ],
+    image: './archive/40.jpg',
+    imageAlt: 'The Smelling Brain',
+    imageCredit: '',
+    sourceUrl: 'https://ddw.nl/en/programme/archive/2026/the-smelling-brain-1',
+    newsletterUrl: '',
+    isOtherWays: false
+  },
+  {
+    id: '41',
+    name: 'Soft Robotic Technological Probe for Speculative Fashion Futures',
+    publishedAt: '2026-04-18',
+    question: '옷이 내 감정을 대신 표현한다면, 그것은 보호일까 감시일까?',
+    category: '크리티컬 디자인',
+    projectType: '논문',
+    tags: [
+      '웨어러블 기술',
+      '소프트 로보틱스',
+      '감정 표현',
+      '비언어적 소통',
+      '사변적 프로토타입',
+      '참여형 리서치',
+      '프라이버시'
+    ],
+    image: './archive/41.jpg',
+    imageAlt: 'Soft Robotic Technological Probe for Speculative Fashion Futures',
+    imageCredit: '',
+    sourceUrl: 'https://arxiv.org/abs/2512.23570',
+    newsletterUrl: '',
+    isOtherWays: false
+  },
+  {
+    id: '42',
+    name: 'From Matter to Method: Situated and Relational Approaches Through Geothermal Clays',
+    publishedAt: '2026-04-18',
+    question: '재료가 예상과 다르게 반응할 때, 그것도 디자인의 방법이 될 수 있을까?',
+    category: '크리티컬 디자인',
+    projectType: '논문',
+    tags: [
+      '재료 중심 디자인',
+      '지열 점토',
+      '물질의 행위성',
+      '포스트휴머니즘',
+      '상황적 리서치',
+      '실천 기반 연구',
+      '우연성과 실패'
+    ],
+    image: './archive/42.jpg',
+    imageAlt: 'From Matter to Method: Situated and Relational Approaches Through Geothermal Clays',
+    imageCredit: '',
+    sourceUrl: 'https://dl.designresearchsociety.org/drs-conference-papers/drs2026/researchpapers/564/',
+    newsletterUrl: '',
+    isOtherWays: false
+  },
+  {
+    id: '43',
+    name: 'Systemic Futures: Integrating Critical Speculation and Systemic Design Pragmatism',
+    publishedAt: '2026-04-18',
+    question: '더 효율적인 미래가 우리가 원하는 미래와 다를 수 있을까?',
+    category: '크리티컬 디자인',
+    projectType: '논문',
+    tags: [
+      '시스테믹 디자인',
+      '미래 시나리오',
+      '사변적 프로토타입',
+      '시스템 맵핑',
+      '참여형 미래 연구',
+      '기술과 노동',
+      '미래의 가치 충돌'
+    ],
+    image: './archive/43.jpg',
+    imageAlt: 'Systemic Futures: Integrating Critical Speculation and Systemic Design Pragmatism',
+    imageCredit: '',
+    sourceUrl: 'https://dl.acm.org/doi/10.1145/3800645.3812901',
+    newsletterUrl: '',
+    isOtherWays: false
+  },
+
+  //26.11.11일 정리 
+
 ];

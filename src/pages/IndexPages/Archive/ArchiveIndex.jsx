@@ -83,7 +83,11 @@ export default function ArchiveIndex({
   });
 
 
-  const visible = filtered.slice(0, limit);
+  const sorted = [...filtered].sort(
+    (a, b) => Number(b.id) - Number(a.id)
+  );
+
+  const visible = sorted.slice(0, limit);
   const hasFilters =
     query.trim() ||
     activeCategory ||
