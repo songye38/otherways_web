@@ -874,7 +874,7 @@ export const archiveItems = [
     imageAlt: 'The Smelling Brain',
     imageCredit: '',
     sourceUrl: 'https://ddw.nl/en/programme/archive/2026/the-smelling-brain-1',
-    newsletterUrl: '',
+    newsletterUrl: 'https://makeways.stibee.com/p/7',
     isOtherWays: false
   },
   {
@@ -896,7 +896,7 @@ export const archiveItems = [
     imageAlt: 'Soft Robotic Technological Probe for Speculative Fashion Futures',
     imageCredit: '',
     sourceUrl: 'https://arxiv.org/abs/2512.23570',
-    newsletterUrl: '',
+    newsletterUrl: 'https://makeways.stibee.com/p/7',
     isOtherWays: false
   },
   {
@@ -940,10 +940,167 @@ export const archiveItems = [
     imageAlt: 'Systemic Futures: Integrating Critical Speculation and Systemic Design Pragmatism',
     imageCredit: '',
     sourceUrl: 'https://dl.acm.org/doi/10.1145/3800645.3812901',
-    newsletterUrl: '',
+    newsletterUrl: 'https://makeways.stibee.com/p/7',
     isOtherWays: false
   },
 
   //26.11.11일 정리 
+  {
+    id: '44',
+    name: 'We found Planet B. What does this mean for design?',
+    publishedAt: '2026-06-08',
+    question: '자연을 완벽하게 복제하면, 그것도 자연이라고 부를 수 있을까?',
+    category: '디자인 픽션',
+    projectType: '논문',
+
+    tags: {
+      topics: ['자연과 생태', '미래 사회', '인간과 자연의 관계'],
+      methods: ['디자인 픽션', '사변적 프로토타입', '참여형 리서치', '설치 실험'],
+      perspectives: ['인간중심주의 비판', '신유물론', '비인간 행위성'],
+      findings: ['자연의 복제와 통제에 대한 비판', '예상하지 못한 참여 행동의 발견'],
+    },
+
+    image: './archive/44.jpg',
+    imageAlt: 'We found Planet B. What does this mean for design?',
+    imageCredit: '',
+    sourceUrl: 'https://dl.designresearchsociety.org/drs-conference-papers/drs2026/researchpapers/33/',
+    newsletterUrl: '',
+    isOtherWays: false
+  },
+  {
+    id: '45',
+    name: 'Protocol Futuring: Speculating Second-Order Dynamics of Protocols in Sociotechnical Infrastructural Futures',
+    publishedAt: '2025-12-05',
+    question: '우리가 만든 규칙이 천 년 뒤에도 같은 의미로 작동할까?',
+    category: '디자인 픽션',
+    projectType: '논문',
+
+    tags: {
+      topics: ['미래 사회', '사회 시스템', '지식과 정보'],
+      methods: ['미래 시나리오', '참여형 워크숍', '프로토콜 설계', '릴레이 디자인'],
+      perspectives: ['시스테믹 디자인', '사회기술적 관점', '장기적 사고'],
+      findings: ['시간에 따른 규칙의 재해석과 변형', '설계 의도와 실제 사용 사이의 간극'],
+    },
+
+    image: './archive/45.jpg',
+    imageAlt: 'Protocol Futuring: Speculating Second-Order Dynamics of Protocols in Sociotechnical Infrastructural Futures',
+    imageCredit: '',
+    sourceUrl: 'https://arxiv.org/abs/2512.06108',
+    newsletterUrl: '',
+    isOtherWays: false
+  },
+  {
+    id: '46',
+    name: 'Mapping Imaginaries: A Futures Workshop for Creative Practices with Generative AI',
+    publishedAt: '2026-11-07',
+    question: 'AI와 함께하는 창작의 미래를 상상할 때, 우리는 무엇을 놓치고 있을까?',
+    category: '디자인 픽션',
+    projectType: '논문',
+
+    tags: {
+      topics: ['인공지능', '창작과 표현', '미래 사회'],
+      methods: ['미래 워크숍', '참여형 리서치', '미래 시나리오', '시각적 매핑'],
+      perspectives: ['사회기술적 관점', '창작자 중심 관점', '비판적 미래 상상'],
+      findings: ['창작자가 상상하는 AI 미래의 다양성과 모순', '과거와 현재의 경험이 미래 상상에 미치는 영향'],
+    },
+
+    image: './archive/46.jpg',
+    imageAlt: 'Mapping Imaginaries: A Futures Workshop for Creative Practices with Generative AI',
+    imageCredit: '',
+    sourceUrl: 'https://dl.acm.org/doi/10.1145/3800645.3812784',
+    newsletterUrl: 'https://makeways.stibee.com/p/8',
+    isOtherWays: false
+  },
+  {
+    id: '47',
+    name: 'Material agencies in co-design: a new materialist perspective on workshop practices',
+    publishedAt: '2026-11-08',
+    question: '포스트잇과 도구도 워크숍의 참여자가 될 수 있을까?',
+    category: '디자인 픽션',
+    projectType: '논문',
+
+    tags: {
+      topics: ['물질과 재료', '협업과 참여', '디자인 방법론'],
+      methods: ['공동디자인', '참여형 워크숍', '물질 기반 탐구', '관찰 리서치'],
+      perspectives: ['신유물론', '비인간 행위성', '관계적 디자인'],
+      findings: ['재료가 참여자의 상호작용과 의미 형성에 미치는 영향', '인간과 물질의 상호작용을 통한 지식 생성'],
+    },
+
+    image: './archive/47.jpg',
+    imageAlt: 'Material agencies in co-design: a new materialist perspective on workshop practices',
+    imageCredit: '',
+    sourceUrl: 'https://digital.library.adelaide.edu.au/items/f2229ec5-387b-40d6-939d-37e76f6ea4a2',
+    newsletterUrl: '',
+    isOtherWays: false
+  },
+  {
+    id: '48',
+    name: 'Staging Futures-in-use: An exploratory format for Participatory and Experiential Futures',
+    publishedAt: '2026-06-14',
+    question: '미래의 제품을 실제로 판매하는 척한다면, 우리가 놓친 문제를 발견할 수 있을까?',
+    category: '디자인 픽션',
+    projectType: '논문',
+
+    tags: {
+      topics: ['미래 사회', '소비와 경제', '기술과 일상'],
+      methods: ['경험적 미래', '사변적 프로토타입', '롤플레잉', '참여형 전시'],
+      perspectives: ['비판적 미래 상상', '참여적 디자인', '사회기술적 관점'],
+      findings: ['가상의 거래 경험을 통한 미래의 숨겨진 가정 발견', '참여자 반응을 통한 미래 시나리오의 재검토'],
+    },
+
+    image: './archive/48.jpg',
+    imageAlt: 'Staging Futures-in-use: An exploratory format for Participatory and Experiential Futures',
+    imageCredit: '',
+    sourceUrl: 'https://dl.acm.org/doi/10.1145/3789492.3796384',
+    newsletterUrl: '',
+    isOtherWays: false
+  },
+  {
+    id: '49',
+    name: 'Design of speculative artifacts: Integrating generative artificial intelligence, biomaterials, and digital fabrication in co-creative and participatory design',
+    publishedAt: '2026-02-01',
+    question: '차별의 경험을 새로운 재료로 만든다면, 무엇이 달라질까?',
+    category: '디자인 픽션',
+    projectType: '논문',
+
+    tags: {
+      topics: ['사회적 배제와 차별', '물질과 재료', '인공지능', '정체성과 경험'],
+      methods: ['바이오소재 실험', '생성형 AI', '디지털 패브리케이션', '공동창작', '사변적 프로토타입'],
+      perspectives: ['사회적 포용', '물질 기반 탐구', '비판적 디자인'],
+      findings: ['개인의 경험을 물질적 형태로 전환하는 가능성', 'AI와 바이오소재를 결합한 공동창작 방법'],
+    },
+
+    image: './archive/49.jpg',
+    imageAlt: 'Design of speculative artifacts: Integrating generative artificial intelligence, biomaterials, and digital fabrication in co-creative and participatory design',
+    imageCredit: '',
+    sourceUrl: 'https://journal.hep.com.cn/ijamd/EN/10.36922/IJAMD025480048',
+    newsletterUrl: 'https://makeways.stibee.com/p/8',
+    isOtherWays: false
+  },
+  {
+    id: '50',
+    name: 'Ecological design futuring with Transition Templates',
+    publishedAt: '2026-10-01',
+    question: '지구의 한계를 지키면서도 좋은 삶을 디자인할 수 있을까?',
+    category: '디자인 픽션',
+    projectType: '논문',
+
+    tags: {
+      topics: ['기후와 환경', '지속가능성', '사회 시스템', '소비와 생산'],
+      methods: ['미래 시나리오', '전환 디자인', '시스템 맵핑', '미래 프레임워크'],
+      perspectives: ['생태중심 디자인', '시스테믹 디자인', '탈성장 관점'],
+      findings: ['제품 개선을 넘어선 사회경제적 시스템 전환의 필요성', '생태적 한계와 디자인 실천 사이의 간극'],
+    },
+
+    image: './archive/50.jpg',
+    imageAlt: 'Ecological design futuring with Transition Templates',
+    imageCredit: '',
+    sourceUrl: 'https://researchspace.bathspa.ac.uk/17877/',
+    newsletterUrl: 'https://makeways.stibee.com/p/8',
+    isOtherWays: false
+  },
+
+  //26.11.18일 정리 
+
 
 ];

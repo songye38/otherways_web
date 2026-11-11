@@ -17,7 +17,7 @@ export const newsletterIssues = [
     experimentTitle: '미래를 한번 더 밀어보기',
     toolkitUrl: 'https://www.otherways.kr/10-min-toolkit/exp-003',
   },
-    {
+  {
     number: 3,
     date: '2026-10-13',
     title: '당연한 것 하나를 지워본다면?',
@@ -25,7 +25,7 @@ export const newsletterIssues = [
     experimentTitle: '당연한 규칙 하나 지우기',
     toolkitUrl: 'https://www.otherways.kr/10-min-toolkit/exp-004',
   },
-    {
+  {
     number: 4,
     date: '2026-10-15',
     title: '당연했던 관계를 뒤집어 본다면?',
@@ -33,7 +33,7 @@ export const newsletterIssues = [
     experimentTitle: '익숙한 것과 낯설게 관계 맺기',
     toolkitUrl: 'https://www.otherways.kr/10-min-toolkit/exp-005',
   },
-      {
+  {
     number: 5,
     date: '2026-10-22',
     title: '서울디자인위크에서 발견한 가능성',
@@ -41,11 +41,27 @@ export const newsletterIssues = [
     experimentTitle: '',
     toolkitUrl: '',
   },
-      {
+  {
     number: 6,
     date: '2026-10-29',
     title: '기억을 입을 수 있다면?',
     newsletterUrl: 'https://makeways.stibee.com/p/6',
+    experimentTitle: '',
+    toolkitUrl: '',
+  },
+  {
+    number: 7,
+    date: '2026-11-05',
+    title: '좋은 해결책은 어떻게 나쁜 미래가 될까?',
+    newsletterUrl: 'https://makeways.stibee.com/p/7',
+    experimentTitle: '',
+    toolkitUrl: '',
+  },
+   {
+    number: 8,
+    date: '2026-11-12',
+    title: '한계 안에서 더 나은 삶을 상상할 수 있을까?',
+    newsletterUrl: 'https://makeways.stibee.com/p/8',
     experimentTitle: '',
     toolkitUrl: '',
   },
