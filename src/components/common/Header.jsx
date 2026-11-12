@@ -118,11 +118,14 @@ export default function Header() {
         <a href="/newsletter" onClick={() => setMenuOpen(false)}>
           Newsletter
         </a>
+        <a href="/10-min-toolkit" onClick={() => setMenuOpen(false)}>
+          10-Min Toolkit
+        </a>
         <a href="/archive" onClick={() => setMenuOpen(false)}>
           Archive
         </a>
-        <a href="/10-min-toolkit" onClick={() => setMenuOpen(false)}>
-          10-Min Toolkit
+        <a href="/references" onClick={() => setMenuOpen(false)}>
+          References
         </a>
       </nav>
     </header>
