@@ -745,7 +745,7 @@
     }
 
     .hero h1 {
-        font-size: 64px;
+        font-size: clamp(48px, 9vw, 72px);
     }
 
     .archive {
