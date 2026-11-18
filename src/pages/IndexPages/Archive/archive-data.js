@@ -1101,6 +1101,162 @@ export const archiveItems = [
   },
 
   //26.11.18일 정리 
+  {
+    id: '51',
+    name: 'Othered Futures: World Building and Mini-Design Charette Workshop Guide',
+    publishedAt: '2025-05-15',
+    question: '기후 재난의 미래를 상상할 때, 누구의 삶을 중심에 놓아야 할까?',
+    category: '디자인 픽션',
+    projectType: '논문',
+
+    tags: {
+      topics: ['소외된 미래', '탈식민주의', '사회적 포용과 다양성', '권력 구조와 불평등'],
+      methods: ['월드 빌딩', '디자인 샤레트', '사변적 디자인 워크숍', '참여적 미래상 구상'],
+      perspectives: ['탈중심화 관점', '탈식민 디자인', '비판적 디자인', '다원적 미래(Pluriverse)'],
+      findings: ['서구 중심적 미래 서사에서 배제된 목소리의 복원 필요성', '집단적 월드 빌딩을 통한 대안적 미래 상상력의 확장'],
+    },
+
+    image: './archive/51.jpg',
+    imageAlt: 'Othered Futures: World Building and Mini-Design Charette Workshop Guide',
+    imageCredit: '',
+    sourceUrl: 'https://figshare.com/articles/dataset/Othered_Futures_World_Building_and_Mini-Design_Charette_Workshop_Guide/29071358?file=54562109',
+    newsletterUrl: '',
+    isOtherWays: false
+  },
+  {
+    id: '52',
+    name: 'Three Lessons from Citizen-Centric Participatory AI Design',
+    publishedAt: '2023-06-19',
+    question: 'AI의 미래를 시민이 직접 상상한다면, 그 상상은 실제 기술 설계에 반영될 수 있을까?',
+    category: '디자인 픽션',
+    projectType: '논문',
+
+    tags: {
+      topics: ['참여형 AI', '인공지능 거버넌스', '공공 정책과 기술', '알고리즘 공정성'],
+      methods: ['시민 중심 참여 디자인', '공동 설계 워크숍', '이해관계자 숙의', '사례 연구'],
+      perspectives: ['시민 중심주의', '사회기술적 관점', '권력 비대칭 해소', '실천적 윤리'],
+      findings: ['AI 기술 교육과 맥락적 이해 선행의 중요성', '참여 과정에서의 실질적 의사결정 권한 부여 필요성', '단발성 자문을 넘어선 지속 가능한 피드백 루프 구축'],
+    },
+
+    image: './archive/52.jpg',
+    imageAlt: 'Three Lessons from Citizen-Centric Participatory AI Design',
+    imageCredit: '',
+    sourceUrl: 'https://arxiv.org/abs/2602.08554',
+    newsletterUrl: '',
+    isOtherWays: false
+  },
+  {
+    id: '53',
+    name: 'QUILT: Designing a values-driven toolkit for surfacing participant-led impact assessment of participatory design and making experiences',
+    publishedAt: '2026-06-08',
+    question: '디자인 프로젝트의 성과를 숫자가 아니라 참여자가 경험한 변화로 평가할 수 있을까?',
+    category: '디자인 픽션',
+    projectType: '논문',
+
+    tags: {
+      topics: ['참여 디자인', '메이킹 경험', '가치 기반 평가', '공동 창작과 역량 강화'],
+      methods: ['참여자 주도 영향 평가', '공동 디자인 툴킷 개발', '텍스타일·메이킹 기반 성찰', '질적 경험 매핑'],
+      perspectives: ['가치 중심 디자인', '참여자 주체성', '관계적·과정 중심 관점', '탈정량적 평가'],
+      findings: ['기존 외부 지표 중심 평가가 놓치는 내면적이고 관계적인 가치의 가시화', '참여자가 스스로 의미와 영향을 정의할 수 있는 창의적 평가 도구의 유효성'],
+    },
+
+    image: './archive/53.jpg',
+    imageAlt: 'QUILT: Designing a values-driven toolkit for surfacing participant-led impact assessment of participatory design and making experiences',
+    imageCredit: '',
+    sourceUrl: 'https://research.aub.ac.uk/id/eprint/601/',
+    newsletterUrl: 'https://makeways.stibee.com/p/9',
+    isOtherWays: false
+  },
+  {
+    id: '54',
+    name: 'Greetings from Creepy Futures: Imagining Creepy Technology as a Resource for Design',
+    publishedAt: '2026-06-13',
+    question: '불쾌하고 섬뜩한 기술을 일부러 디자인하면, 좋은 UX의 기준이 달라질까?',
+    category: '디자인 픽션',
+    projectType: '논문',
+
+    tags: {
+      topics: ['기이함(Creepiness)과 기술', '프라이버시와 감시', '신흥 기술 윤리', '일상적 컴퓨팅'],
+      methods: ['디자인 픽션', '미래 엽서(Postcards from the Future) 워크숍', '사변적 디자인 탐색', '정동적(Affective) 시나리오 분석'],
+      perspectives: ['비판적 디자인', '정동적·감각적 기술 비평', '가치 민감 디자인', '모호성 수용 관점'],
+      findings: ['모호한 감정인 기이함을 윤리적·사회적 위험의 조기 경보 자원으로 활용 가능', '단순한 프라이버시 침해를 넘어선 미묘한 경계 침범과 권력 관계 포착'],
+    },
+
+    image: './archive/54.jpg',
+    imageAlt: 'Greetings from Creepy Futures: Imagining Creepy Technology as a Resource for Design',
+    imageCredit: '',
+    sourceUrl: 'https://orca.cardiff.ac.uk/id/eprint/186621/1/3800645.3812814.pdf',
+    newsletterUrl: 'https://makeways.stibee.com/p/9',
+    isOtherWays: false
+  },
+  {
+    id: '55',
+    name: 'Make it So(und): Speculative Sonic Metaphors as Boundary Objects for Design Research',
+    publishedAt: '2026-06-08',
+    question: '미래의 소리를 설명할 때, 사람들은 왜 은유를 사용할까?',
+    category: '디자인 픽션',
+    projectType: '논문',
+
+    tags: {
+      topics: ['소닉 인터랙션 디자인', '사변적 디자인 연구', '학제 간 소통', '비시각적 감각 경험'],
+      methods: ['사변적 소닉 메타포', '경계물(Boundary Objects) 활용', '사운드 스케치 및 프로토타이핑', '개념적 탐색 워크숍'],
+      perspectives: ['탈시각중심주의', '사변적 실용주의', '현상학적·감각적 접근', '다학제적 협력 관점'],
+      findings: ['추상적 기술 개념과 미래 시나리오를 직관적으로 공유하게 돕는 청각적 메타포의 효용', '서로 다른 배경의 연구자 간 대화를 촉진하는 경계물로서 사운드의 잠재력'],
+    },
+
+    image: './archive/55.jpg',
+    imageAlt: 'Make it So(und): Speculative Sonic Metaphors as Boundary Objects for Design Research',
+    imageCredit: '',
+    sourceUrl: 'https://dl.designresearchsociety.org/drs-conference-papers/drs2026/researchpapers/126/',
+    newsletterUrl: '',
+    isOtherWays: false
+  },
+  {
+    id: '56',
+    name: 'Sustaining the Future with Speculative Proposals in Design Training',
+    publishedAt: '2026-06-08',
+    question: '지속가능한 미래를 상상하는 훈련은 카드 몇 장으로 어떻게 달라질까?',
+    category: '디자인 픽션',
+    projectType: '논문',
+
+    tags: {
+      topics: ['지속가능성 교육', '디자인 교육 커리큘럼', '사변적 디자인', '미래 지향적 디자인 역량'],
+      methods: ['사변적 제안(Speculative Proposals) 프로젝트', '미래 시나리오 탐색', '비판적 프로토타이핑', '디자인 스튜디오 교육 사례 분석'],
+      perspectives: ['지속가능한 전환 관점', '비판적·사변적 교육학', '장기적 시간 지평(Long-termism)', '윤리적·사회적 책임'],
+      findings: ['현재의 시장 요구와 문제 해결 중심 교육을 넘어선 미래 상상력 훈련의 필요성', '사변적 제안을 통한 학생들의 지속가능성 감수성 및 비판적 사고력 함양'],
+    },
+
+    image: './archive/56.jpg',
+    imageAlt: 'Sustaining the Future with Speculative Proposals in Design Training',
+    imageCredit: '',
+    sourceUrl: 'https://link.springer.com/chapter/10.1007/978-3-032-40958-4_2',
+    newsletterUrl: 'https://makeways.stibee.com/p/9',
+    isOtherWays: false
+  },
+  {
+    id: '57',
+    name: 'Reframing Participation in ICH in a Decentering and Decolonising Design Perspective: Drafting guiding principles from a review of literature and of funded projects',
+    publishedAt: '2024-06-23',
+    question: '문화유산을 함께 디자인한다는 말은 실제로 권한을 나누고 있을까?',
+    category: '디자인 픽션',
+    projectType: '논문',
+
+    tags: {
+      topics: ['무형문화유산(ICH)', '문화유산과 참여 디자인', '지역 커뮤니티 역량 강화', '문화적 다양성과 전승'],
+      methods: ['체계적 문헌 고찰', '기금 지원 프로젝트 사례 분석', '설계 가이드라인 도출', '참여 프레임워크 재구성'],
+      perspectives: ['탈중심화(Decentering) 관점', '탈식민(Decolonising) 디자인', '다원적 지식 체계', '권력 관계 재편'],
+      findings: ['서구·전문가 중심의 유산 보존 및 참여 모델의 한계 규명', '지역 공동체의 자율성과 고유 인식론을 존중하는 참여 디자인 원칙 제시'],
+    },
+
+    image: './archive/57.jpg',
+    imageAlt: 'Reframing Participation in ICH in a Decentering and Decolonising Design Perspective: Drafting guiding principles from a review of literature and of funded projects',
+    imageCredit: '',
+    sourceUrl: 'https://dl.designresearchsociety.org/drs-conference-papers/drs2026/researchpapers/126/',
+    newsletterUrl: '',
+    isOtherWays: false
+  },
+
+  //26.11.25일 정리 
 
 
 ];
