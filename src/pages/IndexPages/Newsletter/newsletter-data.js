@@ -65,4 +65,20 @@ export const newsletterIssues = [
     experimentTitle: '',
     toolkitUrl: '',
   },
+    {
+    number: 9,
+    date: '2026-11-19',
+    title: '미래를 상상하는 능력도 훈련할 수 있을까?',
+    newsletterUrl: 'https://makeways.stibee.com/p/9',
+    experimentTitle: '',
+    toolkitUrl: '',
+  },
+    {
+    number: 10,
+    date: '2026-11-26',
+    title: '사람들의 오해도 디자인의 재료가 될 수 있을까?',
+    newsletterUrl: 'https://makeways.stibee.com/p/10',
+    experimentTitle: '',
+    toolkitUrl: '',
+  },
 ];

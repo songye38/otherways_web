@@ -1257,6 +1257,164 @@ export const archiveItems = [
   },
 
   //26.11.25일 정리 
+  {
+    id: '58',
+    name: 'Foresight prototyping: developing an evaluation framework and strategy for future-oriented design',
+    publishedAt: '2026-07-02',
+    question: '미래의 제품은 실제로 작동하지 않아도 좋은 프로토타입이 될 수 있을까?',
+    category: '디자인 픽션',
+    projectType: '논문',
+
+    tags: {
+      topics: ['미래 지향적 디자인', '미래 프로토타이핑', '디자인 평가', '미래 상상력'],
+      methods: ['문헌 고찰', '연구자 인터뷰', '지각 평가 분석', '평가 프레임워크 개발'],
+      perspectives: ['미래 탐색 중심 디자인', '감각적 경험', '창의적 발산', '기능 중심 평가의 확장'],
+      findings: ['기능의 가시성·감각적 경험·미래 적응성·창의적 발산이라는 네 가지 평가 차원 도출', '미래 지향적 프로토타입을 평가하기 위한 19개 문항의 평가 도구 제안'],
+    },
+
+    image: './archive/58.png',
+    imageAlt: 'Foresight prototyping: developing an evaluation framework and strategy for future-oriented design',
+    imageCredit: '',
+    sourceUrl: 'https://www.cambridge.org/core/journals/proceedings-of-the-design-society/article/foresight-prototyping-developing-an-evaluation-framework-and-strategy-for-futureoriented-design/F0D44A3BB9BF72B6DC438E4277A41A9F?utm_source=chatgpt.com',
+    newsletterUrl: 'https://makeways.stibee.com/p/10',
+    isOtherWays: false
+  },
+  {
+    id: '59',
+    name: 'From speculation to strategy reflection: A case study of design-led foresight workshops at Revigrés',
+    publishedAt: '2024-06-08',
+    question: '미래의 집을 상상하는 일이 오늘의 기업 전략을 바꿀 수 있을까?',
+    category: '디자인 픽션',
+    projectType: '논문',
+
+    tags: {
+      topics: ['기업 전략', '디자인 주도 미래탐색', '미래 주거 환경', '산업 전환'],
+      methods: ['미래탐색 워크숍', '트렌드 매핑', '페르소나 기반 시나리오', '사변적 프로토타이핑'],
+      perspectives: ['전략적 미래탐색', '장기적 시간 지평', '다학제적 협업', '미래를 통한 현재의 재해석'],
+      findings: ['사변적 디자인 결과물을 통한 기업의 기존 가정과 전략적 방향 탐색', '미래 주거 시나리오를 매개로 한 다학제적 전략 성찰의 가능성'],
+    },
+
+    image: './archive/59.png',
+    imageAlt: 'From speculation to strategy reflection: A case study of design-led foresight workshops at Revigrés',
+    imageCredit: '',
+    sourceUrl: 'https://dl.designresearchsociety.org/drs-conference-papers/drs2026/researchpapers/266/',
+    newsletterUrl: '',
+    isOtherWays: false
+  },
+
+  {
+    id: '60',
+    name: 'Imagining speculative design tools with a Capability Approach',
+    publishedAt: '2024-06-08',
+    question: '건물과 제품을 설계할 때 인간이 아닌 존재도 법적 이해관계자라면 무엇이 달라질까?',
+    category: '디자인 픽션',
+    projectType: '논문',
+
+    tags: {
+      topics: ['비인간 이해관계자', '자연의 권리', '디자인 방법론', '역량 접근법'],
+      methods: ['사변적 미래 설정', '백캐스팅(Backcasting)', '페르소나 프레임워크 재구성', '이해관계자 매핑'],
+      perspectives: ['인간 너머의 디자인(More-than-human Design)', '탈인간중심주의', '역량 접근법(Capability Approach)', '생태적 정의'],
+      findings: ['비인간 존재의 권리가 인정되는 미래를 바탕으로 현재의 디자인 도구 재구성', '비인간 존재의 생존과 번영에 필요한 조건을 고려하는 디자인 프레임워크 제안'],
+    },
+
+    image: './archive/60.png',
+    imageAlt: 'Imagining speculative design tools with a Capability Approach',
+    imageCredit: '',
+    sourceUrl: 'https://dl.designresearchsociety.org/drs-conference-papers/drs2026/researchpapers/346/',
+    newsletterUrl: '',
+    isOtherWays: false
+  },
+
+  {
+    id: '61',
+    name: 'A Processual Model of Artifact-Mediated Controversy in Public Speculative Design',
+    publishedAt: '2024-06-12',
+    question: '미래의 디자인 결과물을 공개했을 때, 사람들의 반대와 오해도 디자인의 재료가 될 수 있을까?',
+    category: '디자인 픽션',
+    projectType: '논문',
+
+    tags: {
+      topics: ['공공 사변적 디자인', '사회적 논쟁', '인공지능과 사회', '대중 참여'],
+      methods: ['디자인 픽션', '미래 시나리오 탐색', '사변적 아티팩트 제작', '대중 반응 수집 및 분석', '반복적 디자인 재구성'],
+      perspectives: ['논쟁 중심 디자인', '관계적·과정 중심 관점', '다원적 미래', '참여적 의미 형성'],
+      findings: ['자극·분화·재구성·통찰의 구체화로 이어지는 논쟁의 과정적 모델 제안', '대중의 상충하는 해석과 반응을 통한 디자인 문제 및 설계 원칙의 재구성'],
+    },
+
+    image: './archive/61.png',
+    imageAlt: 'A Processual Model of Artifact-Mediated Controversy in Public Speculative Design',
+    imageCredit: '',
+    sourceUrl: 'https://dl.acm.org/doi/10.1145/3802974.3809450',
+    newsletterUrl: 'https://makeways.stibee.com/p/10',
+    isOtherWays: false
+  },
+
+  {
+    id: '62',
+    name: 'Blurring Boundaries: Exploring public exhibition as a design research method for speculating on hospital-in-the-home futures',
+    publishedAt: '2024-10-23',
+    question: '완성되지 않는 전시가 새로운 디자인 연구 방법이 된다면?',
+    category: '디자인 픽션',
+    projectType: '논문',
+
+    tags: {
+      topics: ['참여형 전시', '미래 의료 환경', '재택 의료', '돌봄과 일상생활'],
+      methods: ['전시 기반 디자인 리서치', '참여형 미래탐색', '사변적 프로토타이핑', '경험의 시각적 표현', '미래 편지 쓰기'],
+      perspectives: ['전시를 통한 지식 생산', '집단적 미래 상상', '관계적·과정 중심 관점', '돌봄 중심 디자인'],
+      findings: ['공개 전시를 지속적인 공동창작과 디자인 리서치의 공간으로 활용할 가능성', '재택 의료 환경에서 발생하는 사생활·의료적 감시·돌봄 책임 사이의 긴장 발견'],
+    },
+
+    image: './archive/62.jpg',
+    imageAlt: 'Blurring Boundaries: Exploring public exhibition as a design research method for speculating on hospital-in-the-home futures',
+    imageCredit: '',
+    sourceUrl: 'https://www.tandfonline.com/doi/full/10.1080/14606925.2026.2748944',
+    newsletterUrl: '',
+    isOtherWays: false
+  },
+  {
+    id: '63',
+    name: 'Envisioning Uncertain Futures: A Structured Framework for Speculative Co-design Workshops',
+    publishedAt: '2024-07-20',
+    question: '미래를 상상하는 능력은 어떻게 이끌어낼 수 있을까?',
+    category: '디자인 픽션',
+    projectType: '논문',
+
+    tags: {
+      topics: ['미래 상상력', '사변적 공동디자인', '워크숍 설계', '미래 모빌리티'],
+      methods: ['사변적 공동디자인 워크숍', '신체 기반 역할극', '즉흥적 상황 연기', '서사적 상황 설정', '워크숍 진행 프레임워크 개발'],
+      perspectives: ['체화된 인지(Embodied Cognition)', '경험 기반 미래탐색', '참여자 주체성', '불확실성 수용'],
+      findings: ['서사적 상황 설정·행동 유도 단서·참여자 주도권이라는 세 가지 워크숍 요소 도출', '미래 상상과 참여를 지원하는 Action Wheel 프레임워크 제안'],
+    },
+
+    image: './archive/63.png',
+    imageAlt: 'Envisioning Uncertain Futures: A Structured Framework for Speculative Co-design Workshops',
+    imageCredit: '',
+    sourceUrl: 'https://eprints.bournemouth.ac.uk/42194/',
+    newsletterUrl: 'https://makeways.stibee.com/p/10',
+    isOtherWays: false
+  },
+
+  {
+    id: '64',
+    name: 'Emerging Media Arts and Environmental Futures',
+    publishedAt: '2024-07-06',
+    question: '보이지 않는 환경 변화를 감각으로 경험한다면 미래를 다르게 상상할 수 있을까?',
+    category: '디자인 픽션',
+    projectType: '논문',
+
+    tags: {
+      topics: ['신흥 미디어 예술', '환경적 미래', '생태적 전환', '감각적 경험', '예술 기반 미래탐색'],
+      methods: ['미디어 예술 프로젝트 사례 분석', '예술적 실천 유형화', '학제 간 미래탐색', '개념적 프레임워크 개발'],
+      perspectives: ['체화된 인지(Embodied Cognition)', '인간 너머의 디자인(More-than-human Design)', '다원적 지식 체계', '감각적 미래 인식', '집단적 미래 상상'],
+      findings: ['신흥 미디어 예술이 환경적 미래탐색에 기여할 수 있는 여섯 가지 가능성 도출', '보이지 않는 생태적 과정의 감각화와 다양한 지식 체계의 통합 가능성 제시', '과학적 분석과 예술적 상상력을 결합하는 미래 연구의 필요성'],
+    },
+
+    image: './archive/64.jpg',
+    imageAlt: 'Emerging Media Arts and Environmental Futures',
+    imageCredit: '',
+    sourceUrl: 'https://journals.sagepub.com/doi/full/10.1177/19467567261461912',
+    newsletterUrl: '',
+    isOtherWays: false
+  },
 
 
 ];
